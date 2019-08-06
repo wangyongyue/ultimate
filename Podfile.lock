@@ -1,0 +1,20 @@
+PODS:
+  - SnapKit (5.0.0)
+  - VueSwift (2.0.7)
+
+DEPENDENCIES:
+  - SnapKit
+  - VueSwift
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - SnapKit
+    - VueSwift
+
+SPEC CHECKSUMS:
+  SnapKit: fd22d10eb9aff484d79a8724eab922c1ddf89bcf
+  VueSwift: b0bfe8b86f0de2dec3bf7fb448142d66370f63d4
+
+PODFILE CHECKSUM: fdca3fba4434ae7a2dac5621c75b959d03790687
+
+COCOAPODS: 1.6.1
