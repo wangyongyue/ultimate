@@ -9,27 +9,35 @@
 import UIKit
 import VueSwift
 class Home:Vue,V_ViewControllerProtocol,POSTProtocol{
-    private var model:HttpProtocol?
+    private var model = DefaultHttp()
     func v_viewController() -> UIViewController{
-        let vc = CollectionViewController()
+        let vc = TableViewController()
         vc.m = self
         vc.navigationItem.title = "home"
         return vc
     }
     
     override func v_start() {
-        self.model = HttpFactory.getHttpModel()
         POST().request(params:self.model, http: self)
         self.v_index(vId: INDEXID) { (index) in
-            self.model?.getIndex(vId:INDEXID,index)
+            
+            Router.push(Home(), nil, nil)
         }
     }
   
     func POSTHttpWithData(_ httP: POSTProtocol, _ data: Any) {
         
+        var titles = ["字体颜色","背景图片"]
+        var array = [VueData]()
+        for value in titles {
+            let m = SetupCellModel()
+            m.name = value
+            array.append(m)
+            
+        }
         self.v_array(vId: ARRAYID) { () -> Array<VueData>? in
             
-            return self.model?.getModel(vId:ARRAYID,data)
+            return array
             
         }
         

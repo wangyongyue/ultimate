@@ -11,8 +11,7 @@ import VueSwift
 protocol HttpProtocol {
     var url:String{get}
     func getPOSTBody() -> [String:Any]
-    func getIndex(vId:String,_ index:Int?)
-    func getModel(vId:String,_ data:Any?) -> [VueData]
+   
 }
 protocol ViewLoadProtocol {
     func viewLoad()
@@ -30,9 +29,7 @@ extension UIViewController{
         app.window?.makeKeyAndVisible();
     
     }
-
 }
-
 
 //VUE_ID
 let ARRAYID = "ArrayID"
@@ -43,6 +40,3 @@ let NAVBACKID = "NavBackID"
 
 //http接口
 let defaultUrl = "/default"
-let test1Url = "/test1"
-let test2Url = "/test1"
-let test3Url = "/test1"

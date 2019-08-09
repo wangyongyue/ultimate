@@ -14,6 +14,8 @@ class Cells: NSObject {
         
         Vue.register(aClass: TabHeaderCellModel.classForCoder(), toClass: TabHeaderCell.classForCoder())
         Vue.register(aClass: TabContentCellModel.classForCoder(), toClass: TabContentCell.classForCoder())
+        Vue.register(aClass: SetupCellModel.classForCoder(), toClass: SetupCell.classForCoder())
+        Vue.register(aClass: MenuCellModel.classForCoder(), toClass: MenuCell.classForCoder())
 
         
         

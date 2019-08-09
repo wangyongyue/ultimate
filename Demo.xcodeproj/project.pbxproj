@@ -22,9 +22,17 @@
 		18911C0722CB51DC007618B0 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18911C0622CB51DC007618B0 /* BaseNavigationController.swift */; };
 		18911C0922CB51F6007618B0 /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18911C0822CB51F6007618B0 /* BaseTabBarController.swift */; };
 		18A3E3EF22F8112F0010E560 /* DefaultHttp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A3E3EE22F8112F0010E560 /* DefaultHttp.swift */; };
-		18A3E3F122F8123E0010E560 /* HttpFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A3E3F022F8123E0010E560 /* HttpFactory.swift */; };
+		18A3E40622FBBF450010E560 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A3E40522FBBF450010E560 /* TableViewController.swift */; };
+		18A3E40922FBBFBC0010E560 /* SetupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A3E40822FBBFBC0010E560 /* SetupCell.swift */; };
+		18A3E40C22FBC5210010E560 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A3E40B22FBC5210010E560 /* MenuCell.swift */; };
+		18A3E40E22FBEDB20010E560 /* TuiJian.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A3E40D22FBEDB20010E560 /* TuiJian.swift */; };
+		18A3E41022FBEDBB0010E560 /* WaiMai.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A3E40F22FBEDBB0010E560 /* WaiMai.swift */; };
+		18A3E41222FBEDCC0010E560 /* Shopping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A3E41122FBEDCC0010E560 /* Shopping.swift */; };
+		18A3E41422FBEE050010E560 /* JiaoTong.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A3E41322FBEE050010E560 /* JiaoTong.swift */; };
+		18A3E41622FBEE0D0010E560 /* Hotel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A3E41522FBEE0D0010E560 /* Hotel.swift */; };
+		18A3E41822FBEE2B0010E560 /* Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A3E41722FBEE2B0010E560 /* Tools.swift */; };
+		18A3E41B22FBF0770010E560 /* DataContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A3E41A22FBF0770010E560 /* DataContent.swift */; };
 		18C5FE7C22CF4483003C7EEA /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C5FE7B22CF4483003C7EEA /* Configuration.swift */; };
-		18CF4F4322F012EB0015EF16 /* TestHttp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CF4F4222F012EB0015EF16 /* TestHttp.swift */; };
 		458F053922D6163300271BB4 /* POST.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458F053822D6163300271BB4 /* POST.swift */; };
 		45985A7222ED49C700FB19F4 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45985A7122ED49C700FB19F4 /* CollectionViewController.swift */; };
 		45985A7622ED49ED00FB19F4 /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45985A7522ED49ED00FB19F4 /* CollectionView.swift */; };
@@ -76,9 +84,17 @@
 		18911C0622CB51DC007618B0 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		18911C0822CB51F6007618B0 /* BaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
 		18A3E3EE22F8112F0010E560 /* DefaultHttp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultHttp.swift; sourceTree = "<group>"; };
-		18A3E3F022F8123E0010E560 /* HttpFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpFactory.swift; sourceTree = "<group>"; };
+		18A3E40522FBBF450010E560 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		18A3E40822FBBFBC0010E560 /* SetupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupCell.swift; sourceTree = "<group>"; };
+		18A3E40B22FBC5210010E560 /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
+		18A3E40D22FBEDB20010E560 /* TuiJian.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TuiJian.swift; sourceTree = "<group>"; };
+		18A3E40F22FBEDBB0010E560 /* WaiMai.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaiMai.swift; sourceTree = "<group>"; };
+		18A3E41122FBEDCC0010E560 /* Shopping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shopping.swift; sourceTree = "<group>"; };
+		18A3E41322FBEE050010E560 /* JiaoTong.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JiaoTong.swift; sourceTree = "<group>"; };
+		18A3E41522FBEE0D0010E560 /* Hotel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hotel.swift; sourceTree = "<group>"; };
+		18A3E41722FBEE2B0010E560 /* Tools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tools.swift; sourceTree = "<group>"; };
+		18A3E41A22FBF0770010E560 /* DataContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataContent.swift; sourceTree = "<group>"; };
 		18C5FE7B22CF4483003C7EEA /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
-		18CF4F4222F012EB0015EF16 /* TestHttp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestHttp.swift; sourceTree = "<group>"; };
 		42A35589383EFA4495DF6002 /* Pods-DemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoTests.release.xcconfig"; path = "Target Support Files/Pods-DemoTests/Pods-DemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		42FFFBDD17AFD3F17E4B29D5 /* Pods_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		458F053822D6163300271BB4 /* POST.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POST.swift; sourceTree = "<group>"; };
@@ -204,6 +220,7 @@
 				45985A7122ED49C700FB19F4 /* CollectionViewController.swift */,
 				45985A7522ED49ED00FB19F4 /* CollectionView.swift */,
 				45985A7922ED50BF00FB19F4 /* TabViewController.swift */,
+				18A3E40522FBBF450010E560 /* TableViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -211,6 +228,8 @@
 		18911BEB22CB4505007618B0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				18A3E40A22FBC4F50010E560 /* home */,
+				18A3E40722FBBFA80010E560 /* setup */,
 				45985A7B22ED519E00FB19F4 /* tabCell */,
 			);
 			path = Views;
@@ -221,6 +240,12 @@
 			children = (
 				45985A8022ED885E00FB19F4 /* Menu.swift */,
 				45985A8222ED894F00FB19F4 /* MenuData.swift */,
+				18A3E40D22FBEDB20010E560 /* TuiJian.swift */,
+				18A3E40F22FBEDBB0010E560 /* WaiMai.swift */,
+				18A3E41122FBEDCC0010E560 /* Shopping.swift */,
+				18A3E41322FBEE050010E560 /* JiaoTong.swift */,
+				18A3E41522FBEE0D0010E560 /* Hotel.swift */,
+				18A3E41722FBEE2B0010E560 /* Tools.swift */,
 				18911C0022CB4DC6007618B0 /* Home.swift */,
 			);
 			path = Models;
@@ -231,6 +256,7 @@
 			children = (
 				18911BF422CB4992007618B0 /* Image.swift */,
 				18911BF622CB49A1007618B0 /* Color.swift */,
+				18A3E41922FBEFC00010E560 /* DataContent */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -239,10 +265,33 @@
 			isa = PBXGroup;
 			children = (
 				18911BEF22CB465A007618B0 /* Url.swift */,
-				18A3E3F022F8123E0010E560 /* HttpFactory.swift */,
 				458F059322D7672300271BB4 /* https */,
 			);
 			path = Url;
+			sourceTree = "<group>";
+		};
+		18A3E40722FBBFA80010E560 /* setup */ = {
+			isa = PBXGroup;
+			children = (
+				18A3E40822FBBFBC0010E560 /* SetupCell.swift */,
+			);
+			path = setup;
+			sourceTree = "<group>";
+		};
+		18A3E40A22FBC4F50010E560 /* home */ = {
+			isa = PBXGroup;
+			children = (
+				18A3E40B22FBC5210010E560 /* MenuCell.swift */,
+			);
+			path = home;
+			sourceTree = "<group>";
+		};
+		18A3E41922FBEFC00010E560 /* DataContent */ = {
+			isa = PBXGroup;
+			children = (
+				18A3E41A22FBF0770010E560 /* DataContent.swift */,
+			);
+			path = DataContent;
 			sourceTree = "<group>";
 		};
 		18C5FE7A22CF4414003C7EEA /* Configuration */ = {
@@ -256,7 +305,6 @@
 		458F059322D7672300271BB4 /* https */ = {
 			isa = PBXGroup;
 			children = (
-				18CF4F4222F012EB0015EF16 /* TestHttp.swift */,
 				18A3E3EE22F8112F0010E560 /* DefaultHttp.swift */,
 			);
 			path = https;
@@ -522,26 +570,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18A3E41422FBEE050010E560 /* JiaoTong.swift in Sources */,
 				45985A7622ED49ED00FB19F4 /* CollectionView.swift in Sources */,
 				18911BBE22CB4281007618B0 /* ViewController.swift in Sources */,
+				18A3E41622FBEE0D0010E560 /* Hotel.swift in Sources */,
 				18911BF022CB465A007618B0 /* Url.swift in Sources */,
+				18A3E40622FBBF450010E560 /* TableViewController.swift in Sources */,
 				45985A7D22ED51C200FB19F4 /* TabHeaderCell.swift in Sources */,
 				18C5FE7C22CF4483003C7EEA /* Configuration.swift in Sources */,
 				18911C0122CB4DC6007618B0 /* Home.swift in Sources */,
 				45985A7F22ED51D200FB19F4 /* TabContentCell.swift in Sources */,
+				18A3E40922FBBFBC0010E560 /* SetupCell.swift in Sources */,
+				18A3E41822FBEE2B0010E560 /* Tools.swift in Sources */,
 				45985A7222ED49C700FB19F4 /* CollectionViewController.swift in Sources */,
 				18911BBC22CB4281007618B0 /* AppDelegate.swift in Sources */,
 				18A3E3EF22F8112F0010E560 /* DefaultHttp.swift in Sources */,
 				45985A7A22ED50BF00FB19F4 /* TabViewController.swift in Sources */,
 				18911BF522CB4992007618B0 /* Image.swift in Sources */,
 				45985A8122ED885E00FB19F4 /* Menu.swift in Sources */,
+				18A3E41022FBEDBB0010E560 /* WaiMai.swift in Sources */,
 				45985A8322ED894F00FB19F4 /* MenuData.swift in Sources */,
+				18A3E40C22FBC5210010E560 /* MenuCell.swift in Sources */,
 				18911C0722CB51DC007618B0 /* BaseNavigationController.swift in Sources */,
+				18A3E41B22FBF0770010E560 /* DataContent.swift in Sources */,
+				18A3E41222FBEDCC0010E560 /* Shopping.swift in Sources */,
 				458F053922D6163300271BB4 /* POST.swift in Sources */,
-				18CF4F4322F012EB0015EF16 /* TestHttp.swift in Sources */,
-				18A3E3F122F8123E0010E560 /* HttpFactory.swift in Sources */,
 				18911C0922CB51F6007618B0 /* BaseTabBarController.swift in Sources */,
 				18911BF722CB49A1007618B0 /* Color.swift in Sources */,
+				18A3E40E22FBEDB20010E560 /* TuiJian.swift in Sources */,
 				45985A7822ED4A2400FB19F4 /* Cells.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

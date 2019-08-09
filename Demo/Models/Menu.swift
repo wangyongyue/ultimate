@@ -19,11 +19,11 @@ class Menu:Vue,V_ViewControllerProtocol{
     }
     
     override func v_start() {
-        
+        let titles = ["推荐","购物","内容","看听","旅行"]
         var array = [VueData]()
-        for i in 1...6{
+        for value in titles {
             let m = TabHeaderCellModel()
-            m.name = "tab\(i)"
+            m.name = value
             array.append(m)
         }
         
@@ -32,12 +32,19 @@ class Menu:Vue,V_ViewControllerProtocol{
             return array
             
         }
-        
+        var views = [GetViewProtocol]()
+        views.append(TuiJian())
+        views.append(WaiMai())
+        views.append(Shopping())
+        views.append(JiaoTong())
+        views.append(Hotel())
+//        views.append(Tools())
+
         var contentArray = [VueData]()
-        for i in 1...6{
+        for (index,value) in views.enumerated(){
             let m = TabContentCellModel()
-            m.view = MenuData().getView()
-            if i == 1{
+            m.view = value.getView()
+            if index == 0{
                 m.view?.viewLoad()
                 m.isL = true
                 

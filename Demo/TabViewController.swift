@@ -18,16 +18,16 @@ class TabViewController: UIViewController,UICollectionViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-    
+         self.view.backgroundColor = bgColor
 
         let tabLayout = UICollectionViewFlowLayout()
-        tabLayout.itemSize = CGSize.init(width: WIDTH/6, height: 50)
+        tabLayout.itemSize = CGSize.init(width: WIDTH/5, height: 50)
         tabLayout.scrollDirection = .horizontal
         tabLayout.minimumLineSpacing = 0
         tabLayout.minimumInteritemSpacing = 0
         let tab = CCollection.init(frame: CGRect.zero, collectionViewLayout: tabLayout)
         self.view.addSubview(tab)
-        tab.backgroundColor = UIColor.white
+        tab.backgroundColor = themeColor
         tab.snp.makeConstraints { (make) in
             
             make.top.equalTo(TOP)
@@ -44,11 +44,10 @@ class TabViewController: UIViewController,UICollectionViewDelegate {
             UIView.animate(withDuration: 0.3) {
                 
                 var frame = self.line.frame
-                frame.origin.x = WIDTH/6 * CGFloat(index)
+                frame.origin.x = WIDTH/5 * CGFloat(index)
                 self.line.frame = frame
             }
         }
-        
         
         let layout = UICollectionViewFlowLayout()
         layout.itemSize = CGSize.init(width: WIDTH, height: HEIGHT - TOP - 50)
@@ -58,7 +57,7 @@ class TabViewController: UIViewController,UICollectionViewDelegate {
         let table = CCollection.init(frame: CGRect.zero, collectionViewLayout: layout)
         self.view.addSubview(table)
         table.isPagingEnabled = true
-        table.backgroundColor = UIColor.white
+        table.backgroundColor = UIColor.clear
         table.snp.makeConstraints { (make) in
             
             make.top.equalTo(TOP + 50)
@@ -72,8 +71,8 @@ class TabViewController: UIViewController,UICollectionViewDelegate {
         m?.v_start()
         
         self.view.addSubview(self.line)
-        self.line.backgroundColor = UIColor.red
-        self.line.frame = CGRect.init(x: 0, y: TOP + 50, width: WIDTH/6, height: 2)
+        self.line.backgroundColor = UIColor.white
+        self.line.frame = CGRect.init(x: 0, y: TOP + 50 - 2, width: WIDTH/5, height: 2)
         
         self.tab = tab
         self.table = table
@@ -85,7 +84,7 @@ class TabViewController: UIViewController,UICollectionViewDelegate {
         UIView.animate(withDuration: 0.3) {
             
             var frame = self.line.frame
-            frame.origin.x = WIDTH/6 * index
+            frame.origin.x = WIDTH/5 * index
             self.line.frame = frame
         }
         

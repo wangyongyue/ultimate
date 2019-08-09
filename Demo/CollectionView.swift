@@ -18,13 +18,13 @@ class CollectionView: UIView,ViewLoadProtocol{
         self.m = m
         
         let layout = UICollectionViewFlowLayout()
-        layout.itemSize = CGSize.init(width: WIDTH/2, height: WIDTH/2)
+        layout.itemSize = CGSize.init(width: WIDTH/4, height: WIDTH/4)
         layout.scrollDirection = .vertical
         layout.minimumLineSpacing = 0
         layout.minimumInteritemSpacing = 0
         let table = CCollection.init(frame: CGRect.zero, collectionViewLayout: layout)
         self.addSubview(table)
-        table.backgroundColor = UIColor.clear
+        table.backgroundColor = bgColor
         table.snp.makeConstraints { (make) in
             
             make.top.equalTo(0)

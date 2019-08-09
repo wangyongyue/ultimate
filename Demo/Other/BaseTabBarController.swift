@@ -14,9 +14,9 @@ class BaseTabBarController: UITabBarController {
         super.viewDidLoad()
         
         
-        addChildVC(childVC: Menu().v_viewController(), childTitle: "主页", image: Image.mine(), selectedImage: Image.mine_sel())
-        addChildVC(childVC: Home().v_viewController(), childTitle: "Home", image: Image.mine(), selectedImage: Image.mine_sel())
-        addChildVC(childVC: Home().v_viewController(), childTitle: "我的", image: Image.mine(), selectedImage: Image.mine_sel())
+        addChildVC(childVC: Menu().v_viewController(), childTitle: "主页", image: Image.home(), selectedImage: Image.home_sel())
+        addChildVC(childVC: Home().v_viewController(), childTitle: "设置", image: Image.mine(), selectedImage: Image.mine_sel())
+//        addChildVC(childVC: Home().v_viewController(), childTitle: "我的", image: Image.mine(), selectedImage: Image.mine_sel())
 
     }
     
@@ -28,6 +28,9 @@ class BaseTabBarController: UITabBarController {
         childVC.tabBarItem.image = image
         childVC.tabBarItem.selectedImage = selectedImage
         self.addChild(navigation)
+        
+        self.tabBar.isTranslucent = false
+        self.tabBar.tintColor = themeColor
         
     }
     

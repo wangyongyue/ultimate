@@ -18,8 +18,65 @@
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array/>
+		</dict>
+		<dict/>
+	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>weixin</string>
+		<string>http</string>
+		<string>http://maps.google.com</string>
+		<string>tel</string>
+		<string>sms</string>
+		<string>mailto</string>
+		<string>ibooks</string>
+		<string>itms-apps://itunes.apple.com</string>
+		<string>music</string>
+		<string>videos</string>
+		<string>mqq</string>
+		<string>TencentWeibo</string>
+		<string>taobao</string>
+		<string>alipay</string>
+		<string>sinaweibo</string>
+		<string>ucbrowser</string>
+		<string>SogouMSE</string>
+		<string>baidumap</string>
+		<string>googlechrome</string>
+		<string>youku</string>
+		<string>openapp.jdmoble</string>
+		<string>renren</string>
+		<string>imeituan</string>
+		<string>wccbyihaodian</string>
+		<string>wcc</string>
+		<string>yddictproapp</string>
+		<string>zhihu</string>
+		<string>dianping</string>
+		<string>sinavdisk</string>
+		<string>doubanradio</string>
+		<string>ntesopen</string>
+		<string>camcard</string>
+		<string>qqmusic</string>
+		<string>tenvideo</string>
+		<string>doubanmovie</string>
+		<string>orpheus</string>
+		<string>newsapp</string>
+		<string>apper</string>
+		<string>ntescaipiao</string>
+		<string>youdaonote</string>
+		<string>duokan-reader</string>
+		<string>dirtybeijing</string>
+		<string>baidumusic</string>
+		<string>xcfapp</string>
+	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>UILaunchStoryboardName</key>
