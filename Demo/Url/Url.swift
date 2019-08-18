@@ -24,7 +24,9 @@ extension UIViewController{
    
     static func toHome(){
         let app = UIApplication.shared.delegate as! AppDelegate
-        let tab = BaseTabBarController()
+        let tab = BaseNavigationController.init(rootViewController: Menu().v_viewController())
+        
+//        let tab = BaseTabBarController()
         app.window?.rootViewController = tab;
         app.window?.makeKeyAndVisible();
     

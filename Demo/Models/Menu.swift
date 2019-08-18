@@ -14,7 +14,7 @@ class Menu:Vue,V_ViewControllerProtocol{
     func v_viewController() -> UIViewController{
         let vc = TabViewController()
         vc.m = self
-        vc.navigationItem.title = "Menu"
+        vc.navigationItem.title = "主页"
         return vc
     }
     

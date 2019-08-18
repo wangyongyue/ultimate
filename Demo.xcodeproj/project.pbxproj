@@ -11,7 +11,6 @@
 		18911BBC22CB4281007618B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18911BBB22CB4281007618B0 /* AppDelegate.swift */; };
 		18911BBE22CB4281007618B0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18911BBD22CB4281007618B0 /* ViewController.swift */; };
 		18911BC122CB4281007618B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18911BBF22CB4281007618B0 /* Main.storyboard */; };
-		18911BC322CB42A5007618B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18911BC222CB42A5007618B0 /* Assets.xcassets */; };
 		18911BC622CB42A5007618B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18911BC422CB42A5007618B0 /* LaunchScreen.storyboard */; };
 		18911BD122CB42A5007618B0 /* DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18911BD022CB42A5007618B0 /* DemoTests.swift */; };
 		18911BDC22CB42A5007618B0 /* DemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18911BDB22CB42A5007618B0 /* DemoUITests.swift */; };
@@ -33,6 +32,7 @@
 		18A3E41822FBEE2B0010E560 /* Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A3E41722FBEE2B0010E560 /* Tools.swift */; };
 		18A3E41B22FBF0770010E560 /* DataContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A3E41A22FBF0770010E560 /* DataContent.swift */; };
 		18C5FE7C22CF4483003C7EEA /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C5FE7B22CF4483003C7EEA /* Configuration.swift */; };
+		457E365523097C3700D14847 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 457E365423097C3700D14847 /* Assets.xcassets */; };
 		458F053922D6163300271BB4 /* POST.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458F053822D6163300271BB4 /* POST.swift */; };
 		45985A7222ED49C700FB19F4 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45985A7122ED49C700FB19F4 /* CollectionViewController.swift */; };
 		45985A7622ED49ED00FB19F4 /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45985A7522ED49ED00FB19F4 /* CollectionView.swift */; };
@@ -68,7 +68,6 @@
 		18911BBB22CB4281007618B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18911BBD22CB4281007618B0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		18911BC022CB4281007618B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		18911BC222CB42A5007618B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18911BC522CB42A5007618B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18911BC722CB42A5007618B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18911BCC22CB42A5007618B0 /* DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,6 +96,7 @@
 		18C5FE7B22CF4483003C7EEA /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		42A35589383EFA4495DF6002 /* Pods-DemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoTests.release.xcconfig"; path = "Target Support Files/Pods-DemoTests/Pods-DemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		42FFFBDD17AFD3F17E4B29D5 /* Pods_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		457E365423097C3700D14847 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		458F053822D6163300271BB4 /* POST.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POST.swift; sourceTree = "<group>"; };
 		45985A7122ED49C700FB19F4 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		45985A7522ED49ED00FB19F4 /* CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionView.swift; sourceTree = "<group>"; };
@@ -178,8 +178,8 @@
 				18911BEB22CB4505007618B0 /* Views */,
 				18911BEA22CB4502007618B0 /* ViewControllers */,
 				18911BBF22CB4281007618B0 /* Main.storyboard */,
-				18911BC222CB42A5007618B0 /* Assets.xcassets */,
 				18911BC422CB42A5007618B0 /* LaunchScreen.storyboard */,
+				457E365423097C3700D14847 /* Assets.xcassets */,
 				18911BC722CB42A5007618B0 /* Info.plist */,
 			);
 			path = Demo;
@@ -451,7 +451,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18911BC622CB42A5007618B0 /* LaunchScreen.storyboard in Resources */,
-				18911BC322CB42A5007618B0 /* Assets.xcassets in Resources */,
+				457E365523097C3700D14847 /* Assets.xcassets in Resources */,
 				18911BC122CB4281007618B0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -774,6 +774,7 @@
 			baseConfigurationReference = A51D0805D8D68588106065A5 /* Pods-Demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XN467W38GQ;
@@ -796,6 +797,7 @@
 			baseConfigurationReference = 5A111DE660BB3C699F05D563 /* Pods-Demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XN467W38GQ;

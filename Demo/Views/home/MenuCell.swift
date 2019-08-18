@@ -32,10 +32,12 @@ class MenuCell: UICollectionViewCell {
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.contentView.backgroundColor = UIColor.clear
-        self.contentView.addSubview(headerLabel)
         self.contentView.addSubview(headerImage)
+        self.contentView.addSubview(headerLabel)
+
         self.contentView.addGestureRecognizer(tap)
         
+        headerImage.contentMode = .scaleAspectFit
         headerImage.snp.makeConstraints { (make) in
             
             make.top.equalTo(5)
@@ -58,6 +60,8 @@ class MenuCell: UICollectionViewCell {
             let m = aModel as! MenuCellModel
             
             headerLabel.text = m.icon?.name
+            headerImage.image = m.icon?.headerImg
+
             tap.v_tap {
                 m.v_identifier = 0
                 m.v_to()
