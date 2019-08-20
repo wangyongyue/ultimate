@@ -26,15 +26,12 @@ extension DataContent{
         array.append(Icon.init(name: "QQ", headerImg: UIImage.init(named: "mqq"), toUrl: "mqq://"))
         array.append(Icon.init(name: "支付宝", headerImg: UIImage.init(named: "alipay"), toUrl: "alipay://"))
         array.append(Icon.init(name: "微博", headerImg: UIImage.init(named: "sinaweibo"), toUrl: "sinaweibo://"))
-        array.append(Icon.init(name: "陌陌", headerImg: UIImage.init(named: "momochat"), toUrl: "momochat://"))
-        array.append(Icon.init(name: "QQ音乐", headerImg: UIImage.init(named: "qqmusic"), toUrl: "qqmusic://"))
-        array.append(Icon.init(name: "唱吧", headerImg: UIImage.init(named: "changba"), toUrl: "changba://"))
+        array.append(Icon.init(name: "今日头条", headerImg: UIImage.init(named: "snssdk141"), toUrl: "snssdk141://"))
+        array.append(Icon.init(name: "爱奇艺", headerImg: UIImage.init(named: "aiqiyi"), toUrl: "iphone://"))
         array.append(Icon.init(name: "滴滴出行", headerImg: UIImage.init(named: "diditaxi"), toUrl: "diditaxi://"))
         array.append(Icon.init(name: "美团", headerImg: UIImage.init(named: "imeituan"), toUrl: "imeituan://"))
-        array.append(Icon.init(name: "百度地图", headerImg: UIImage.init(named: "baidumap"), toUrl: "baidumap://"))
         array.append(Icon.init(name: "高德地图", headerImg: UIImage.init(named: "iosamap"), toUrl: "iosamap://"))
-        array.append(Icon.init(name: "摩拜单车", headerImg: UIImage.init(named: "weixin"), toUrl: "mobike://scanqr"))
-        array.append(Icon.init(name: "ofo", headerImg: UIImage.init(named: "ofoapp"), toUrl: "ofoapp://"))
+        array.append(Icon.init(name: "摩拜单车", headerImg: UIImage.init(named: "mobike"), toUrl: "mobike://scanqr"))
 
         
         
@@ -59,7 +56,7 @@ extension DataContent{
     
     static func getShopping() -> [Icon]{
         var array = [Icon]()
-        array.append(Icon.init(name: "知乎", headerImg: UIImage.init(named: "weixin"), toUrl: "zhihu://"))
+        array.append(Icon.init(name: "知乎", headerImg: UIImage.init(named: "zhihu"), toUrl: "zhihu://"))
         array.append(Icon.init(name: "今日头条", headerImg: UIImage.init(named: "snssdk141"), toUrl: "snssdk141://"))
         array.append(Icon.init(name: "网易新闻", headerImg: UIImage.init(named: "newsapp"), toUrl: "newsapp://"))
         array.append(Icon.init(name: "腾讯新闻", headerImg: UIImage.init(named: "qqnews"), toUrl: "qqnews://"))
@@ -83,6 +80,9 @@ extension DataContent{
         array.append(Icon.init(name: "酷狗音乐", headerImg: UIImage.init(named: "kugouURL"), toUrl: "kugouURL://"))
         array.append(Icon.init(name: "QQ音乐", headerImg: UIImage.init(named: "qqmusic"), toUrl: "qqmusic://"))
         array.append(Icon.init(name: "网易云音乐", headerImg: UIImage.init(named: "orpheus"), toUrl: "orpheus://"))
+        array.append(Icon.init(name: "QQ音乐", headerImg: UIImage.init(named: "qqmusic"), toUrl: "qqmusic://"))
+        array.append(Icon.init(name: "唱吧", headerImg: UIImage.init(named: "changba"), toUrl: "changba://"))
+
 
         return array
     }
@@ -95,6 +95,9 @@ extension DataContent{
         array.append(Icon.init(name: "大众点评", headerImg: UIImage.init(named: "dianping"), toUrl: "dianping://"))
         array.append(Icon.init(name: "58同城", headerImg: UIImage.init(named: "wbmain"), toUrl: "wbmain://"))
         array.append(Icon.init(name: "携程无线", headerImg: UIImage.init(named: "CtripWireless"), toUrl: "CtripWireless://"))
+        array.append(Icon.init(name: "陌陌", headerImg: UIImage.init(named: "momochat"), toUrl: "momochat://"))
+        array.append(Icon.init(name: "百度地图", headerImg: UIImage.init(named: "baidumap"), toUrl: "baidumap://"))
+        array.append(Icon.init(name: "ofo", headerImg: UIImage.init(named: "ofoapp"), toUrl: "ofoapp://"))
 
         
         return array
