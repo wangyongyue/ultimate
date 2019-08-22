@@ -29,6 +29,9 @@ class JiaoTong:Vue,GetViewProtocol,POSTProtocol{
                 if (UIApplication.shared.canOpenURL(url!))
                 {
                     UIApplication.shared.open(url!, options: [:], completionHandler: nil)
+                }else{
+                    
+                    Alert.show(str: "没有安装\(m.icon?.name ?? ""),请前往AppStore下载")
                 }
             }
         }
