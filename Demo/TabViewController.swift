@@ -77,6 +77,9 @@ class TabViewController: UIViewController,UICollectionViewDelegate {
         self.tab = tab
         self.table = table
         
+        
+        
+        
     }
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         
