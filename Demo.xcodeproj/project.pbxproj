@@ -50,13 +50,6 @@
 		18A3E40622FBBF450010E560 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A3E40522FBBF450010E560 /* TableViewController.swift */; };
 		18A3E40922FBBFBC0010E560 /* SetupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A3E40822FBBFBC0010E560 /* SetupCell.swift */; };
 		18A3E40C22FBC5210010E560 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A3E40B22FBC5210010E560 /* MenuCell.swift */; };
-		18A3E40E22FBEDB20010E560 /* TuiJian.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A3E40D22FBEDB20010E560 /* TuiJian.swift */; };
-		18A3E41022FBEDBB0010E560 /* WaiMai.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A3E40F22FBEDBB0010E560 /* WaiMai.swift */; };
-		18A3E41222FBEDCC0010E560 /* Shopping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A3E41122FBEDCC0010E560 /* Shopping.swift */; };
-		18A3E41422FBEE050010E560 /* JiaoTong.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A3E41322FBEE050010E560 /* JiaoTong.swift */; };
-		18A3E41622FBEE0D0010E560 /* Hotel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A3E41522FBEE0D0010E560 /* Hotel.swift */; };
-		18A3E41822FBEE2B0010E560 /* Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A3E41722FBEE2B0010E560 /* Tools.swift */; };
-		18A3E41B22FBF0770010E560 /* DataContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A3E41A22FBF0770010E560 /* DataContent.swift */; };
 		18C5FE7C22CF4483003C7EEA /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C5FE7B22CF4483003C7EEA /* Configuration.swift */; };
 		18C6D986237C069B00BCF77E /* TraHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C6D985237C069B00BCF77E /* TraHome.swift */; };
 		18C6D988237C06A400BCF77E /* TraTrip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C6D987237C06A400BCF77E /* TraTrip.swift */; };
@@ -100,6 +93,7 @@
 		45985A7F22ED51D200FB19F4 /* TabContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45985A7E22ED51D200FB19F4 /* TabContentCell.swift */; };
 		45985A8122ED885E00FB19F4 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45985A8022ED885E00FB19F4 /* Menu.swift */; };
 		45985A8322ED894F00FB19F4 /* MenuData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45985A8222ED894F00FB19F4 /* MenuData.swift */; };
+		45B04AB7237C5363002B650B /* NotesColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B04AB6237C5363002B650B /* NotesColors.swift */; };
 		B617D314845B89B19697980D /* Pods_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42FFFBDD17AFD3F17E4B29D5 /* Pods_Demo.framework */; };
 		D44991443EF71FB9075AD326 /* Pods_DemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFB92A2976401FA38EB89D96 /* Pods_DemoUITests.framework */; };
 /* End PBXBuildFile section */
@@ -170,13 +164,6 @@
 		18A3E40522FBBF450010E560 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		18A3E40822FBBFBC0010E560 /* SetupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupCell.swift; sourceTree = "<group>"; };
 		18A3E40B22FBC5210010E560 /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
-		18A3E40D22FBEDB20010E560 /* TuiJian.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TuiJian.swift; sourceTree = "<group>"; };
-		18A3E40F22FBEDBB0010E560 /* WaiMai.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaiMai.swift; sourceTree = "<group>"; };
-		18A3E41122FBEDCC0010E560 /* Shopping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shopping.swift; sourceTree = "<group>"; };
-		18A3E41322FBEE050010E560 /* JiaoTong.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JiaoTong.swift; sourceTree = "<group>"; };
-		18A3E41522FBEE0D0010E560 /* Hotel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hotel.swift; sourceTree = "<group>"; };
-		18A3E41722FBEE2B0010E560 /* Tools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tools.swift; sourceTree = "<group>"; };
-		18A3E41A22FBF0770010E560 /* DataContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataContent.swift; sourceTree = "<group>"; };
 		18C5FE7B22CF4483003C7EEA /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		18C6D985237C069B00BCF77E /* TraHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraHome.swift; sourceTree = "<group>"; };
 		18C6D987237C06A400BCF77E /* TraTrip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraTrip.swift; sourceTree = "<group>"; };
@@ -222,6 +209,7 @@
 		45985A7E22ED51D200FB19F4 /* TabContentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabContentCell.swift; sourceTree = "<group>"; };
 		45985A8022ED885E00FB19F4 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		45985A8222ED894F00FB19F4 /* MenuData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuData.swift; sourceTree = "<group>"; };
+		45B04AB6237C5363002B650B /* NotesColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesColors.swift; sourceTree = "<group>"; };
 		5A111DE660BB3C699F05D563 /* Pods-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.release.xcconfig"; path = "Target Support Files/Pods-Demo/Pods-Demo.release.xcconfig"; sourceTree = "<group>"; };
 		6B3527A4D3CA321520E453EF /* Pods-DemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoUITests.release.xcconfig"; path = "Target Support Files/Pods-DemoUITests/Pods-DemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7821C1C7F7555F4E07756901 /* Pods_DemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -382,6 +370,7 @@
 			isa = PBXGroup;
 			children = (
 				1884C732237BD00F00A05B9A /* NotesInstructions.swift */,
+				45B04AB3237C5284002B650B /* NotesTools */,
 				1884C753237BF03B00A05B9A /* Notes */,
 				1884C752237BF03900A05B9A /* NotesAssistant */,
 				1884C751237BF03700A05B9A /* NotesQuick */,
@@ -396,19 +385,6 @@
 				1884C74B237BDEFE00A05B9A /* NavTitleCell.swift */,
 			);
 			path = navigations;
-			sourceTree = "<group>";
-		};
-		1884C74F237BEC1200A05B9A /* apps */ = {
-			isa = PBXGroup;
-			children = (
-				18A3E40D22FBEDB20010E560 /* TuiJian.swift */,
-				18A3E40F22FBEDBB0010E560 /* WaiMai.swift */,
-				18A3E41122FBEDCC0010E560 /* Shopping.swift */,
-				18A3E41322FBEE050010E560 /* JiaoTong.swift */,
-				18A3E41522FBEE0D0010E560 /* Hotel.swift */,
-				18A3E41722FBEE2B0010E560 /* Tools.swift */,
-			);
-			path = apps;
 			sourceTree = "<group>";
 		};
 		1884C750237BF03500A05B9A /* NotesMine */ = {
@@ -619,7 +595,6 @@
 				45985A8022ED885E00FB19F4 /* Menu.swift */,
 				45985A8222ED894F00FB19F4 /* MenuData.swift */,
 				18911C0022CB4DC6007618B0 /* Home.swift */,
-				1884C74F237BEC1200A05B9A /* apps */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -629,7 +604,6 @@
 			children = (
 				18911BF422CB4992007618B0 /* Image.swift */,
 				18911BF622CB49A1007618B0 /* Color.swift */,
-				18A3E41922FBEFC00010E560 /* DataContent */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -657,14 +631,6 @@
 				18A3E40B22FBC5210010E560 /* MenuCell.swift */,
 			);
 			path = home;
-			sourceTree = "<group>";
-		};
-		18A3E41922FBEFC00010E560 /* DataContent */ = {
-			isa = PBXGroup;
-			children = (
-				18A3E41A22FBF0770010E560 /* DataContent.swift */,
-			);
-			path = DataContent;
 			sourceTree = "<group>";
 		};
 		18C5FE7A22CF4414003C7EEA /* Configuration */ = {
@@ -949,6 +915,22 @@
 			path = tabCell;
 			sourceTree = "<group>";
 		};
+		45B04AB3237C5284002B650B /* NotesTools */ = {
+			isa = PBXGroup;
+			children = (
+				45B04AB5237C52CF002B650B /* NotesColors */,
+			);
+			path = NotesTools;
+			sourceTree = "<group>";
+		};
+		45B04AB5237C52CF002B650B /* NotesColors */ = {
+			isa = PBXGroup;
+			children = (
+				45B04AB6237C5363002B650B /* NotesColors.swift */,
+			);
+			path = NotesColors;
+			sourceTree = "<group>";
+		};
 		541B328BABE8FA40933D1E55 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -1204,7 +1186,6 @@
 				1884C73B237BD0B300A05B9A /* ListInstructions.swift in Sources */,
 				1884C76D237BF43000A05B9A /* ShareHome.swift in Sources */,
 				1884C759237BF0A000A05B9A /* NotesQuick.swift in Sources */,
-				18A3E41422FBEE050010E560 /* JiaoTong.swift in Sources */,
 				18C6D9AB237C088900BCF77E /* SMMine.swift in Sources */,
 				45985A7622ED49ED00FB19F4 /* CollectionView.swift in Sources */,
 				18C6D997237C077400BCF77E /* ListCalender.swift in Sources */,
@@ -1219,7 +1200,6 @@
 				18C6D9DD237C0CD500BCF77E /* KnowledgeMessage.swift in Sources */,
 				1884C739237BD0A900A05B9A /* TravelInstructions.swift in Sources */,
 				18911BBE22CB4281007618B0 /* ViewController.swift in Sources */,
-				18A3E41622FBEE0D0010E560 /* Hotel.swift in Sources */,
 				1884C743237BD0DA00A05B9A /* MusicInstructions.swift in Sources */,
 				1884C719237BB45600A05B9A /* AlertView.swift in Sources */,
 				1884C749237BDDCE00A05B9A /* TableView.swift in Sources */,
@@ -1242,11 +1222,11 @@
 				1884C75B237BF0A700A05B9A /* NotesMine.swift in Sources */,
 				18C6D9A5237C087300BCF77E /* SMClassification.swift in Sources */,
 				1884C74E237BE05F00A05B9A /* Notes.swift in Sources */,
-				18A3E41822FBEE2B0010E560 /* Tools.swift in Sources */,
 				18C6D9C5237C0A9A00BCF77E /* NewsHot.swift in Sources */,
 				45985A7222ED49C700FB19F4 /* CollectionViewController.swift in Sources */,
 				1884C73D237BD0BD00A05B9A /* ShoppingMallInstructions.swift in Sources */,
 				1884C745237BD0E400A05B9A /* KnowledgeInstructions.swift in Sources */,
+				45B04AB7237C5363002B650B /* NotesColors.swift in Sources */,
 				18911BBC22CB4281007618B0 /* AppDelegate.swift in Sources */,
 				18C6D98E237C06BD00BCF77E /* TraMine.swift in Sources */,
 				18A3E3EF22F8112F0010E560 /* DefaultHttp.swift in Sources */,
@@ -1260,7 +1240,6 @@
 				457E3658230ECBE300D14847 /* Alert.swift in Sources */,
 				1884C74C237BDEFE00A05B9A /* NavTitleCell.swift in Sources */,
 				18C6D9BB237C0A3C00BCF77E /* VideoMine.swift in Sources */,
-				18A3E41022FBEDBB0010E560 /* WaiMai.swift in Sources */,
 				18C6D98A237C06AD00BCF77E /* TraJourney.swift in Sources */,
 				18C6D9A3237C086B00BCF77E /* SMHome.swift in Sources */,
 				18C6D9C7237C0AA600BCF77E /* NewMine.swift in Sources */,
@@ -1273,11 +1252,9 @@
 				18C6D99B237C078300BCF77E /* ListSetup.swift in Sources */,
 				18C6D98C237C06B500BCF77E /* TraService.swift in Sources */,
 				18C6D9B3237C0A1A00BCF77E /* VideoHome.swift in Sources */,
-				18A3E41B22FBF0770010E560 /* DataContent.swift in Sources */,
 				1884C737237BD09F00A05B9A /* ShareInstructions.swift in Sources */,
 				18C6D9D1237C0B4B00BCF77E /* MusicDynamic.swift in Sources */,
 				1884C773237BF44C00A05B9A /* ShareMine.swift in Sources */,
-				18A3E41222FBEDCC0010E560 /* Shopping.swift in Sources */,
 				1884C771237BF44500A05B9A /* ShareGood.swift in Sources */,
 				458F053922D6163300271BB4 /* POST.swift in Sources */,
 				18C6D9DF237C0CE200BCF77E /* KnowledgeMine.swift in Sources */,
@@ -1285,7 +1262,6 @@
 				18911C0922CB51F6007618B0 /* BaseTabBarController.swift in Sources */,
 				1884C765237BF22A00A05B9A /* SVMessage.swift in Sources */,
 				18911BF722CB49A1007618B0 /* Color.swift in Sources */,
-				18A3E40E22FBEDB20010E560 /* TuiJian.swift in Sources */,
 				45985A7822ED4A2400FB19F4 /* Cells.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

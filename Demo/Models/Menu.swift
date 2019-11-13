@@ -33,11 +33,11 @@ class Menu:Vue,V_ViewControllerProtocol{
             
         }
         var views = [GetViewProtocol]()
-        views.append(TuiJian())
-        views.append(WaiMai())
-        views.append(Shopping())
-        views.append(JiaoTong())
-        views.append(Hotel())
+//        views.append(TuiJian())
+//        views.append(WaiMai())
+//        views.append(Shopping())
+//        views.append(JiaoTong())
+//        views.append(Hotel())
 //        views.append(Tools())
 
         var contentArray = [VueData]()

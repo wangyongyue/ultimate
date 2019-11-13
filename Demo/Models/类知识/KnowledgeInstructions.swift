@@ -14,9 +14,9 @@ class KnowledgeInstructions: Configuration {
             
          let tab = BaseTabBarController()
          tab.addChildVC(childVC: KnowledgeHome().v_viewController(), childTitle: "首页", image: Image.home(), selectedImage: Image.home_sel())
-         tab.addChildVC(childVC: KnowledgeMembers().v_viewController(), childTitle: "同城", image: Image.home(), selectedImage: Image.home_sel())
+         tab.addChildVC(childVC: KnowledgeMembers().v_viewController(), childTitle: "会员", image: Image.home(), selectedImage: Image.home_sel())
          tab.addChildVC(childVC: KnowledgeMessage().v_viewController(), childTitle: "消息", image: Image.home(), selectedImage: Image.home_sel())
-         tab.addChildVC(childVC: KnowledgeMine().v_viewController(), childTitle: "我", image: Image.home(), selectedImage: Image.home_sel())
+         tab.addChildVC(childVC: KnowledgeMine().v_viewController(), childTitle: "我的", image: Image.home(), selectedImage: Image.home_sel())
 
          return tab
         }

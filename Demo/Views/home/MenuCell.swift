@@ -59,9 +59,7 @@ class MenuCell: UICollectionViewCell {
         if aModel is MenuCellModel{
             let m = aModel as! MenuCellModel
             
-            headerLabel.text = m.icon?.name
-            headerImage.image = m.icon?.headerImg
-
+          
             tap.v_tap {
                 m.v_identifier = 0
                 m.v_to()
@@ -74,7 +72,6 @@ class MenuCell: UICollectionViewCell {
 class MenuCellModel:VueData{
     
     var name:String?
-    var icon:Icon?
 }
 
 
