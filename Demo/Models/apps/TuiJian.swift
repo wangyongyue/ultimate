@@ -22,6 +22,10 @@ class TuiJian:Vue,GetViewProtocol,POSTProtocol{
         
         POST().request(params:self.model, http: self)
         self.v_index(vId: INDEXID) { (index) in
+            
+            Router.push(Notes(), nil, nil)
+            return
+            
             let m = self.array[index] as! MenuCellModel
             if let str = m.icon?.toUrl{
                 let url = URL.init(string: str)

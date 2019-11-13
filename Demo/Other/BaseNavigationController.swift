@@ -22,16 +22,31 @@ class BaseNavigationController: UINavigationController {
         self.navigationBar.setBackgroundImage(UIImage(), for: .default)
         self.navigationBar.shadowImage = UIImage()
 
-        let statusBarWindow : UIView = UIApplication.shared.value(forKey: "statusBarWindow") as! UIView
-        let statusBar : UIView = statusBarWindow.value(forKey: "statusBar") as! UIView
-        if statusBar.responds(to:#selector(setter: UIView.backgroundColor)) {
-            statusBar.backgroundColor = themeColor
-        }
+//        let statusBarWindow : UIView = UIApplication.shared.value(forKey: "statusBarWindow") as! UIView
+//        let statusBar : UIView = statusBarWindow.value(forKey: "statusBar") as! UIView
+//        if statusBar.responds(to:#selector(setter: UIView.backgroundColor)) {
+//            statusBar.backgroundColor = themeColor
+//        }
         
         //背景颜色
         let dict:NSDictionary = [NSAttributedString.Key.backgroundColor: UIColor.clear,NSAttributedString.Key.foregroundColor: UIColor.white,NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: 15)]
         //标题颜色
         self.navigationBar.titleTextAttributes = dict as? [NSAttributedString.Key : AnyObject]
+        
+        self.setBase()
+        
+        self.navigationBar.isHidden = true
     }
+    
+    func setBase(){
+           
+           //Base style for 矩形 2
+           let style = UIView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: 20))
+           style.alpha = 1
+           self.view.addSubview(style)
+           style.backgroundColor = themeColor
+
+           
+       }
     
 }

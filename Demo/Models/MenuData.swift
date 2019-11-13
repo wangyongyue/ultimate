@@ -10,7 +10,7 @@ import UIKit
 import VueSwift
 
 class MenuData:Vue,GetViewProtocol,POSTProtocol{
-    private var model = DefaultHttp()
+    private var http = DefaultHttp()
     func getView() -> ViewLoadProtocol {
         
         let v = CollectionView.init(self)
@@ -19,9 +19,8 @@ class MenuData:Vue,GetViewProtocol,POSTProtocol{
     
     override func v_start() {
 
-        POST().request(params:self.model, http: self)
+        POST().request(params:self.http, http: self)
         self.v_index(vId: INDEXID) { (index) in
-            
             
         }
     }

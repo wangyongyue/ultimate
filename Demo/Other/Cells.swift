@@ -17,7 +17,8 @@ class Cells: NSObject {
         Vue.register(aClass: SetupCellModel.classForCoder(), toClass: SetupCell.classForCoder())
         Vue.register(aClass: MenuCellModel.classForCoder(), toClass: MenuCell.classForCoder())
 
-        
+        Vue.register(aClass: NavTitleCellModel.classForCoder(), toClass: NavTitleCell.classForCoder())
+
         
 
     }

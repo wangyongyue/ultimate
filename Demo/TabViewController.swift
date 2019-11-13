@@ -79,7 +79,6 @@ class TabViewController: UIViewController,UICollectionViewDelegate {
         
         
         
-        
     }
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         

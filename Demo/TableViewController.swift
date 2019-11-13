@@ -14,6 +14,18 @@ class TableViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+    
+        let navigation = CTable()
+        self.view.addSubview(navigation)
+        navigation.backgroundColor = bgColor
+        navigation.snp.makeConstraints { (make) in
+            
+            make.top.equalTo(Adapter.topStatus())
+            make.left.equalTo(0)
+            make.right.equalTo(0)
+            make.height.equalTo(Adapter.topNavigation())
+        }
+       
       
         let table = CTable()
         self.view.addSubview(table)
@@ -28,9 +40,12 @@ class TableViewController: UIViewController {
         }
         table.v_array(vId: ARRAYID, vue: m)
         table.v_index(vId: INDEXID, vue: m)
+        
+        navigation.v_array(vId: NAVARRAYID, vue: m)
+        navigation.v_index(vId: NAVINDEXID, vue: m)
+        
         m?.v_start()
         
     }
-    
 
 }

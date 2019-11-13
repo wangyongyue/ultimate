@@ -8,45 +8,72 @@
 
 import UIKit
 import VueSwift
-class Home:Vue,V_ViewControllerProtocol,POSTProtocol{
-    private var model = DefaultHttp()
-    func v_viewController() -> UIViewController{
-        let vc = TableViewController()
-        vc.m = self
-        vc.navigationItem.title = "home"
-        return vc
-    }
-    
-    override func v_start() {
-        POST().request(params:self.model, http: self)
-        self.v_index(vId: INDEXID) { (index) in
-            
-            Router.push(Home(), nil, nil)
-        }
-    }
-  
-    func POSTHttpWithData(_ httP: POSTProtocol, _ data: Any) {
+class Home:Vue,V_ViewControllerProtocol{
+    private var http = DefaultHttp()
         
-        var titles = ["字体颜色","背景图片"]
-        var array = [VueData]()
-        for value in titles {
-            let m = SetupCellModel()
-            m.name = value
-            array.append(m)
-            
-        }
-        self.v_array(vId: ARRAYID) { () -> Array<VueData>? in
-            
-            return array
-            
+        func v_viewController() -> UIViewController{
+            let vc = TableViewController()
+            vc.m = self
+            return vc
         }
         
+        override func v_start() {
+                    
+            dealNav()
+            dealContent()
+          
+        }
+        private func dealNav(){
+            
+            POST().request(params: self.http) { (isK, data) in
+                       
+                       
+                var array = [VueData]()
+                let m = NavTitleCellModel()
+                m.name = "home"
+                array.append(m)
+                self.v_array(vId: NAVARRAYID) { () -> Array<VueData>? in
+                    return array
+                }
+           }
+                   
+                   
+            self.v_index(vId: NAVINDEXID) { (index) in
+                
+            }
+            
+        }
+        private func dealContent(){
+            
+           POST().request(params: self.http) { (isK, data) in
+                           
+                  
+             let titles = ["字体颜色","背景图片"]
+             var array = [VueData]()
+             for value in titles {
+                        
+                 let m = SetupCellModel()
+                 m.name = value
+                 array.append(m)
+                        
+             }
+             self.v_array(vId: ARRAYID) { () -> Array<VueData>? in
+                 return array
+                        
+             }
+                    
+                      
+            }
+            
+             self.v_index(vId: INDEXID) { (index) in
+                 
+                 Router.push(Home(), nil, nil)
+                
+            }
+            
+        }
+      
+       
+       
         
     }
-    func POSTHttpWithError(_ httP: POSTProtocol, _ error: String) {
-        
-        
-    }
-   
-    
-}
