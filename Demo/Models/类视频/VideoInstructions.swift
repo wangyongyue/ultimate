@@ -10,12 +10,16 @@ import UIKit
 
 class VideoInstructions: Configuration {
 
-     override func getTabBar() -> BaseTabBarController{
-        
-           let tab = BaseTabBarController()
-           tab.addChildVC(childVC: Notes().v_viewController(), childTitle: "主页", image: Image.home(), selectedImage: Image.home_sel())
-           tab.addChildVC(childVC: Home().v_viewController(), childTitle: "主页", image: Image.home(), selectedImage: Image.home_sel())
+   override func getTabBar() -> BaseTabBarController{
+         
+      let tab = BaseTabBarController()
+      tab.addChildVC(childVC: VideoHome().v_viewController(), childTitle: "首页", image: Image.home(), selectedImage: Image.home_sel())
+      tab.addChildVC(childVC: VideoHot().v_viewController(), childTitle: "同城", image: Image.home(), selectedImage: Image.home_sel())
+      tab.addChildVC(childVC: VideoMembers().v_viewController(), childTitle: "消息", image: Image.home(), selectedImage: Image.home_sel())
+      tab.addChildVC(childVC: VideoDubbles().v_viewController(), childTitle: "我", image: Image.home(), selectedImage: Image.home_sel())
+      tab.addChildVC(childVC: VideoMine().v_viewController(), childTitle: "我", image: Image.home(), selectedImage: Image.home_sel())
 
-           return tab
-       }
+
+      return tab
+     }
 }

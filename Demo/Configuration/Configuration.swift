@@ -32,7 +32,7 @@ extension UIViewController{
    
     static func toHome(){
         let app = UIApplication.shared.delegate as! AppDelegate
-        let tab = ShareInstructions().getTabBar()
+        let tab = TravelInstructions().getTabBar()
         app.window?.rootViewController = tab;
         app.window?.makeKeyAndVisible();
         
