@@ -62,6 +62,7 @@ class SMMine:Vue,V_ViewControllerProtocol{
         
          self.v_index(vId: INDEXID) { (index) in
              
+            Router.push(SMBePaid(), nil, nil)
             
         }
         

@@ -86,7 +86,7 @@ class TabViewController: UIViewController,UICollectionViewDelegate {
         m?.v_start()
         
         self.view.addSubview(self.line)
-        self.line.backgroundColor = UIColor.white
+        self.line.backgroundColor = Configuration.instructions.themeColor()
         self.line.frame = CGRect.init(x: 0, y: Adapter.top() + 50 - 2, width: WIDTH/number, height: 2)
         
         self.tab = tab

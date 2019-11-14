@@ -7,8 +7,6 @@
 //
 
 import UIKit
-
-
 import VueSwift
 class VideoMine:Vue,V_ViewControllerProtocol{
     private var http = DefaultHttp()
@@ -57,13 +55,12 @@ class VideoMine:Vue,V_ViewControllerProtocol{
              return array
                     
          }
-                
                   
         }
         
          self.v_index(vId: INDEXID) { (index) in
              
-            
+            Router.push(VideoCollection(),nil,nil)
         }
         
     }
