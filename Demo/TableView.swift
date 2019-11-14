@@ -18,10 +18,11 @@ class TableView: UIView,ViewLoadProtocol{
         
         self.m = m
         
-   
+        self.backgroundColor = Configuration.instructions.backgroundColor()
+
         let table = CTable()
         self.addSubview(table)
-        table.backgroundColor = bgColor
+        table.backgroundColor = Configuration.instructions.backgroundColor()
         table.snp.makeConstraints { (make) in
             
             make.top.equalTo(0)

@@ -14,19 +14,21 @@ class NavTitleCell: UITableViewCell {
     let headerLabel:UILabel = {
         let label = UILabel()
         label.textAlignment = .center
-        label.textColor = UIColor.black
+        label.textColor = Configuration.instructions.navigtaionTextColor()
         label.backgroundColor = UIColor.clear
         return label
     }()
     
    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-    
+        self.backgroundColor = UIColor.clear
         self.contentView.addSubview(headerLabel)
         headerLabel.snp.makeConstraints { (make) in
             
             make.center.equalTo(self.contentView)
         }
+        
+    
     }
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)

@@ -19,6 +19,10 @@ class SetupCell: UITableViewCell {
         a.backgroundColor = UIColor.lightGray
         return a
     }()
+    lazy private var tap:UITapGestureRecognizer = {
+        let a = UITapGestureRecognizer()
+        return a
+    }()
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
@@ -41,6 +45,8 @@ class SetupCell: UITableViewCell {
             make.bottom.equalTo(0)
             
         }
+        
+        self.contentView.addGestureRecognizer(tap)
     }
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -50,6 +56,11 @@ class SetupCell: UITableViewCell {
             
             let m = aModel as! SetupCellModel
             self.label.text = m.name
+            
+            tap.v_tap {
+                m.v_identifier = 0
+                m.v_to()
+            }
         }
     }
 }

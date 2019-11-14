@@ -8,7 +8,6 @@
 
 import UIKit
 import VueSwift
-
 class MenuData:Vue,GetViewProtocol,POSTProtocol{
     private var http = DefaultHttp()
     func getView() -> ViewLoadProtocol {

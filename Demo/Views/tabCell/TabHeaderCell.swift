@@ -14,15 +14,16 @@ class TabHeaderCell: UICollectionViewCell {
     let headerLabel:UILabel = {
         let label = UILabel()
         label.textAlignment = .center
-        label.textColor = UIColor.white
-        label.backgroundColor = themeColor
+        label.textColor = Configuration.instructions.navigtaionTextColor()
+        label.backgroundColor = UIColor.clear
+
         return label
     }()
     
     let tap = UITapGestureRecognizer()
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.contentView.backgroundColor = themeColor
+        self.backgroundColor = UIColor.clear
         self.contentView.addSubview(headerLabel)
         self.contentView.addGestureRecognizer(tap)
         headerLabel.snp.makeConstraints { (make) in

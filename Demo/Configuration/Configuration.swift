@@ -17,13 +17,34 @@ let HEIGHT:CGFloat = UIScreen.main.bounds.height
 let  themeColor = UIColor.init(red: 9/255.0, green: 169/255.0, blue: 159/255.0, alpha: 1.0)
 let  bgColor = UIColor.init(red: 230/255.0, green: 230/255.0, blue: 230/255.0, alpha: 1.0)
 
-
 class Configuration{
+    static let instructions = ListInstructions()
     
     func getTabBar() -> BaseTabBarController{
         let tab = BaseTabBarController()
         tab.addChildVC(childVC: Home().v_viewController(), childTitle: "主页", image: Image.home(), selectedImage: Image.home_sel())
         return tab
+    }
+    func themeColor() -> UIColor{
+        return UIColor.init(red: 9/255.0, green: 169/255.0, blue: 159/255.0, alpha: 1.0)
+    }
+    func backgroundColor() -> UIColor{
+        return UIColor.init(red: 230/255.0, green: 230/255.0, blue: 230/255.0, alpha: 1.0)
+    }
+    func tabBarBackgroundColor() -> UIColor{
+        return UIColor.init(red: 230/255.0, green: 230/255.0, blue: 230/255.0, alpha: 1.0)
+    }
+    func tabBarColor() -> UIColor{
+        return UIColor.init(red: 230/255.0, green: 230/255.0, blue: 230/255.0, alpha: 1.0)
+    }
+    func navigtaionBackgroundColor() -> UIColor{
+        return UIColor.init(red: 230/255.0, green: 230/255.0, blue: 230/255.0, alpha: 1.0)
+    }
+    func statusColor() -> UIColor{
+        return UIColor.init(red: 230/255.0, green: 230/255.0, blue: 230/255.0, alpha: 1.0)
+    }
+    func navigtaionTextColor() -> UIColor{
+          return UIColor.black
     }
     
 }
@@ -32,7 +53,7 @@ extension UIViewController{
    
     static func toHome(){
         let app = UIApplication.shared.delegate as! AppDelegate
-        let tab = TravelInstructions().getTabBar()
+        let tab = Configuration.instructions.getTabBar()
         app.window?.rootViewController = tab;
         app.window?.makeKeyAndVisible();
         

@@ -12,30 +12,45 @@ import SnapKit
 class TabViewController: UIViewController,UICollectionViewDelegate {
 
     var m:Vue?
-    var tab:CCollection?
-    var table:CCollection?
-    var line = UIView()
+    var number:CGFloat = 0
+    private var tab:CCollection?
+    private var table:CCollection?
+    private var line = UIView()
     override func viewDidLoad() {
         super.viewDidLoad()
         
-         self.view.backgroundColor = bgColor
-
+        self.view.backgroundColor = Configuration.instructions.backgroundColor()
+        
+        let navigation = CTable()
+        self.view.addSubview(navigation)
+        navigation.backgroundColor = Configuration.instructions.navigtaionBackgroundColor()
+        navigation.snp.makeConstraints { (make) in
+            
+            make.top.equalTo(Adapter.topStatus())
+            make.left.equalTo(0)
+            make.right.equalTo(0)
+            make.height.equalTo(Adapter.topNavigation())
+        }
+        navigation.v_array(vId: NAVARRAYID, vue: m)
+        navigation.v_index(vId: NAVINDEXID, vue: m)
+        
         let tabLayout = UICollectionViewFlowLayout()
-        tabLayout.itemSize = CGSize.init(width: WIDTH/5, height: 50)
+        tabLayout.itemSize = CGSize.init(width: WIDTH/number, height: 50)
         tabLayout.scrollDirection = .horizontal
         tabLayout.minimumLineSpacing = 0
         tabLayout.minimumInteritemSpacing = 0
         let tab = CCollection.init(frame: CGRect.zero, collectionViewLayout: tabLayout)
         self.view.addSubview(tab)
-        tab.backgroundColor = themeColor
+        tab.backgroundColor = Configuration.instructions.backgroundColor()
         tab.snp.makeConstraints { (make) in
             
-            make.top.equalTo(TOP)
+            make.top.equalTo(Adapter.top())
             make.left.equalTo(0)
             make.right.equalTo(0)
             make.height.equalTo(50)
             
         }
+        
         tab.v_array(vId: TABID, vue: m)
         tab.v_index(vId: TABINDEXID, vue: m)
         tab.v_didSelect { (index) in
@@ -44,23 +59,23 @@ class TabViewController: UIViewController,UICollectionViewDelegate {
             UIView.animate(withDuration: 0.3) {
                 
                 var frame = self.line.frame
-                frame.origin.x = WIDTH/5 * CGFloat(index)
+                frame.origin.x = WIDTH/self.number * CGFloat(index)
                 self.line.frame = frame
             }
         }
         
         let layout = UICollectionViewFlowLayout()
-        layout.itemSize = CGSize.init(width: WIDTH, height: HEIGHT - TOP - 50)
+        layout.itemSize = CGSize.init(width: WIDTH, height: self.view.frame.height - Adapter.top() - 50 - Adapter.bottom())
         layout.minimumLineSpacing = 0
         layout.minimumInteritemSpacing = 0
         layout.scrollDirection = .horizontal
         let table = CCollection.init(frame: CGRect.zero, collectionViewLayout: layout)
         self.view.addSubview(table)
         table.isPagingEnabled = true
-        table.backgroundColor = UIColor.clear
+        table.backgroundColor = Configuration.instructions.backgroundColor()
         table.snp.makeConstraints { (make) in
             
-            make.top.equalTo(TOP + 50)
+            make.top.equalTo(Adapter.top() + 50)
             make.left.equalTo(0)
             make.right.equalTo(0)
             make.bottom.equalTo(0)
@@ -72,11 +87,10 @@ class TabViewController: UIViewController,UICollectionViewDelegate {
         
         self.view.addSubview(self.line)
         self.line.backgroundColor = UIColor.white
-        self.line.frame = CGRect.init(x: 0, y: TOP + 50 - 2, width: WIDTH/5, height: 2)
+        self.line.frame = CGRect.init(x: 0, y: Adapter.top() + 50 - 2, width: WIDTH/number, height: 2)
         
         self.tab = tab
         self.table = table
-        
         
         
     }
@@ -86,7 +100,7 @@ class TabViewController: UIViewController,UICollectionViewDelegate {
         UIView.animate(withDuration: 0.3) {
             
             var frame = self.line.frame
-            frame.origin.x = WIDTH/5 * index
+            frame.origin.x = WIDTH/self.number * index
             self.line.frame = frame
         }
         

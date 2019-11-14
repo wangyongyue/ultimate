@@ -14,10 +14,11 @@ class TableViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.view.backgroundColor = Configuration.instructions.backgroundColor()
     
         let navigation = CTable()
         self.view.addSubview(navigation)
-        navigation.backgroundColor = bgColor
+        navigation.backgroundColor = Configuration.instructions.navigtaionBackgroundColor()
         navigation.snp.makeConstraints { (make) in
             
             make.top.equalTo(Adapter.topStatus())
@@ -29,7 +30,7 @@ class TableViewController: UIViewController {
       
         let table = CTable()
         self.view.addSubview(table)
-        table.backgroundColor = bgColor
+        table.backgroundColor = Configuration.instructions.backgroundColor()
         table.snp.makeConstraints { (make) in
             
             make.top.equalTo(TOP)

@@ -27,8 +27,9 @@ class BaseTabBarController: UITabBarController {
         self.addChild(navigation)
         
         self.tabBar.isTranslucent = false
-        self.tabBar.tintColor = themeColor
-        
+        self.tabBar.tintColor = Configuration.instructions.tabBarColor()
+        self.tabBar.barTintColor = Configuration.instructions.tabBarBackgroundColor()
+
     }
     
 

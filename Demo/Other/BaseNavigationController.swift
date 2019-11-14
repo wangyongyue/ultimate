@@ -34,7 +34,6 @@ class BaseNavigationController: UINavigationController {
         self.navigationBar.titleTextAttributes = dict as? [NSAttributedString.Key : AnyObject]
         
         self.setBase()
-        
         self.navigationBar.isHidden = true
     }
     
@@ -44,7 +43,7 @@ class BaseNavigationController: UINavigationController {
            let style = UIView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: 20))
            style.alpha = 1
            self.view.addSubview(style)
-           style.backgroundColor = themeColor
+           style.backgroundColor = Configuration.instructions.statusColor()
 
            
        }

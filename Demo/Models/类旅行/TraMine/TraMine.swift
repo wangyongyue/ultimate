@@ -26,19 +26,13 @@ class TraMine:Vue,V_ViewControllerProtocol{
     }
     private func dealNav(){
         
-        POST().request(params: self.http) { (isK, data) in
-                   
-                   
-            var array = [VueData]()
-            let m = NavTitleCellModel()
-            m.name = "TraMine"
-            array.append(m)
-            self.v_array(vId: NAVARRAYID) { () -> Array<VueData>? in
-                return array
-            }
-       }
-               
-               
+        var array = [VueData]()
+        let m = NavTitleCellModel()
+        m.name = "TraMine"
+        array.append(m)
+        self.v_array(vId: NAVARRAYID) { () -> Array<VueData>? in
+            return array
+        }
         self.v_index(vId: NAVINDEXID) { (index) in
             
         }
@@ -68,7 +62,7 @@ class TraMine:Vue,V_ViewControllerProtocol{
         
          self.v_index(vId: INDEXID) { (index) in
              
-             Router.push(Home(), nil, nil)
+             Router.push(TraAllOrders(), nil, nil)
             
         }
         
