@@ -10,7 +10,7 @@ import UIKit
 
 class ShoppingMallInstructions: Configuration {
 
-    override func getTabBar() -> BaseTabBarController{
+    override func getTabBar() -> UIViewController{
          
       let tab = BaseTabBarController()
       tab.addChildVC(childVC: SMHome().v_viewController(), childTitle: "首页", image: UIImage.init(named: "sm_1"), selectedImage: UIImage.init(named: "sm_1"))

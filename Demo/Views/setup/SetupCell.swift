@@ -12,6 +12,7 @@ class SetupCell: UITableViewCell {
     
     lazy private var label:UILabel = {
         let a = UILabel()
+        a.textAlignment = .center
         return a
     }()
     lazy private var line:UIView = {
@@ -32,7 +33,7 @@ class SetupCell: UITableViewCell {
         self.label.snp.makeConstraints { (make) in
             
             make.top.equalTo(0)
-            make.left.equalTo(12)
+            make.left.equalTo(0)
             make.right.equalTo(0)
             make.bottom.equalTo(0)
             

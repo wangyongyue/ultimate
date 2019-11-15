@@ -42,8 +42,7 @@ class NewMine:Vue,V_ViewControllerProtocol{
         
        POST().request(params: self.http) { (isK, data) in
                        
-              
-         let titles = ["字体颜色note","背景图片note"]
+         let titles = ["消息","历史","收藏","已推","红包"]
          var array = [VueData]()
          for value in titles {
                     
@@ -62,6 +61,15 @@ class NewMine:Vue,V_ViewControllerProtocol{
         
          self.v_index(vId: INDEXID) { (index) in
              
+            switch index{
+            case 0:Router.push(NewMineMessage(),nil,nil)
+            case 1:Router.push(NewMineHistory(),nil,nil)
+            case 2:Router.push(NewMineCollection(),nil,nil)
+            case 3:Router.push(NewMinePush(),nil,nil)
+            case 4:Router.push(NewMineRedEnvelope(),nil,nil)
+
+            default:Debug.log("o")
+            }
             
         }
         

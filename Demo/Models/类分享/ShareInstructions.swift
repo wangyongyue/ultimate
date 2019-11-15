@@ -10,7 +10,7 @@ import UIKit
 
 class ShareInstructions: Configuration {
 
-    override func getTabBar() -> BaseTabBarController{
+    override func getTabBar() -> UIViewController{
 
     let tab = BaseTabBarController()
     tab.addChildVC(childVC: ShareHome().v_viewController(), childTitle: "首页", image: UIImage.init(named: "share_1@3x.png"), selectedImage: UIImage.init(named: "share_1@3x.png"))

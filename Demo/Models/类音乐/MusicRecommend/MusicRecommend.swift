@@ -62,7 +62,8 @@ class MusicRecommend:Vue,V_ViewControllerProtocol{
         
          self.v_index(vId: INDEXID) { (index) in
              
-            
+            Router.push(MusicRecommendDetails(), nil, nil)
+
         }
         
     }

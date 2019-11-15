@@ -10,7 +10,7 @@ import UIKit
 
 class TravelInstructions: Configuration {
 
-     override func getTabBar() -> BaseTabBarController{
+     override func getTabBar() -> UIViewController{
          
       let tab = BaseTabBarController()
       tab.addChildVC(childVC: TraHome().v_viewController(), childTitle: "首页", image: UIImage.init(named: "travel_1"), selectedImage: UIImage.init(named: "travel_1"))

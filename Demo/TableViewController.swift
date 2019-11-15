@@ -15,6 +15,13 @@ class TableViewController: UIViewController {
         super.viewDidLoad()
         
         self.view.backgroundColor = Configuration.instructions.backgroundColor()
+        
+        let style = UIView()
+        style.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: 20)
+        style.alpha = 1
+        self.view.addSubview(style)
+        style.backgroundColor = Configuration.instructions.statusColor()
+        
     
         let navigation = CTable()
         self.view.addSubview(navigation)
@@ -44,6 +51,15 @@ class TableViewController: UIViewController {
         
         navigation.v_array(vId: NAVARRAYID, vue: m)
         navigation.v_index(vId: NAVINDEXID, vue: m)
+        
+        m?.v_if(vId: STATUSID, v: { (isF) in
+            if isF{
+                
+                style.backgroundColor = Configuration.instructions.themeColor()
+                navigation.backgroundColor = Configuration.instructions.themeColor()
+
+            }
+        })
         
         m?.v_start()
         

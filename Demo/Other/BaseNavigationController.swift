@@ -33,19 +33,9 @@ class BaseNavigationController: UINavigationController {
         //标题颜色
         self.navigationBar.titleTextAttributes = dict as? [NSAttributedString.Key : AnyObject]
         
-        self.setBase()
         self.navigationBar.isHidden = true
     }
     
-    func setBase(){
-           
-           //Base style for 矩形 2
-           let style = UIView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: 20))
-           style.alpha = 1
-           self.view.addSubview(style)
-           style.backgroundColor = Configuration.instructions.statusColor()
 
-           
-       }
     
 }

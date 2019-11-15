@@ -10,7 +10,7 @@ import UIKit
 
 class VideoInstructions: Configuration {
 
-   override func getTabBar() -> BaseTabBarController{
+   override func getTabBar() -> UIViewController{
          
       let tab = BaseTabBarController()
     tab.addChildVC(childVC: VideoHome().v_viewController(), childTitle: "首页", image: UIImage.init(named: "Video_1"), selectedImage: UIImage.init(named: "Video_1"))

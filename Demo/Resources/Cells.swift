@@ -20,7 +20,9 @@ class Cells: NSObject {
         Vue.register(aClass: NavTitleCellModel.classForCoder(), toClass: NavTitleCell.classForCoder())
         Vue.register(aClass: NavBackCellModel.classForCoder(), toClass: NavBackCell.classForCoder())
 
-        
+        Vue.register(aClass: TabHeaderLineCellModel.classForCoder(), toClass: TabHeaderLineCell.classForCoder())
+        Vue.register(aClass: TodoCellModel.classForCoder(), toClass: TodoCell.classForCoder())
+
 
     }
 }

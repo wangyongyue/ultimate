@@ -7,7 +7,6 @@
 //
 
 import UIKit
-
 import VueSwift
 class MusicMine:Vue,V_ViewControllerProtocol{
     private var http = DefaultHttp()
@@ -42,8 +41,7 @@ class MusicMine:Vue,V_ViewControllerProtocol{
         
        POST().request(params: self.http) { (isK, data) in
                        
-              
-         let titles = ["字体颜色note","背景图片note"]
+         let titles = ["喜欢","最近","本地","已购"]
          var array = [VueData]()
          for value in titles {
                     
@@ -62,12 +60,17 @@ class MusicMine:Vue,V_ViewControllerProtocol{
         
          self.v_index(vId: INDEXID) { (index) in
              
-            
+            switch index{
+            case 0:Router.push(MusicLike(),nil,nil)
+            case 1:Router.push(MusicRecent(),nil,nil)
+            case 2:Router.push(MusicLocal(),nil,nil)
+            case 3:Router.push(MusicPurchased(),nil,nil)
+
+            default:Debug.log("o")
+            }
         }
         
     }
   
-   
-   
     
 }

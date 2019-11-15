@@ -10,7 +10,7 @@ import UIKit
 
 class NotesInstructions: Configuration {
 
-     override func getTabBar() -> BaseTabBarController{
+     override func getTabBar() -> UIViewController{
        
         let tab = BaseTabBarController()
         tab.addChildVC(childVC: Notes().v_viewController(), childTitle: "笔记", image: UIImage.init(named: "notes_1"), selectedImage: UIImage.init(named: "notes_1"))

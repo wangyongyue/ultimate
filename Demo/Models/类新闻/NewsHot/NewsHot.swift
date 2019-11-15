@@ -11,22 +11,25 @@ import UIKit
 
 import VueSwift
 class NewsHot:Vue,V_ViewControllerProtocol{
-    private var http = DefaultHttp()
+    
     
     func v_viewController() -> UIViewController{
-        let vc = TableViewController()
-        vc.m = self
-        return vc
-    }
+            let vc = TabViewController()
+            vc.m = self
+            vc.number = 4
+            return vc
+        }
+        
+        override func v_start() {
+            dealNav()
+            dealTab()
+            dealContent()
+            
+        }
     
-    override func v_start() {
-                
-        dealNav()
-        dealContent()
-      
-    }
     private func dealNav(){
         
+     
         var array = [VueData]()
         let m = NavTitleCellModel()
         m.name = "NewsHot"
@@ -34,38 +37,65 @@ class NewsHot:Vue,V_ViewControllerProtocol{
         self.v_array(vId: NAVARRAYID) { () -> Array<VueData>? in
             return array
         }
+               
         self.v_index(vId: NAVINDEXID) { (index) in
             
         }
         
     }
-    private func dealContent(){
-        
-       POST().request(params: self.http) { (isK, data) in
-                       
-              
-         let titles = ["字体颜色note","背景图片note"]
-         var array = [VueData]()
-         for value in titles {
-                    
-             let m = SetupCellModel()
-             m.name = value
-             array.append(m)
-                    
-         }
-         self.v_array(vId: ARRAYID) { () -> Array<VueData>? in
-             return array
-                    
-         }
-                
-                  
+    private func dealTab(){
+        let titles = ["推荐","热榜","话题榜","星推荐"]
+        var array = [VueData]()
+        for value in titles {
+            let m = TabHeaderCellModel()
+            m.name = value
+            array.append(m)
         }
         
-         self.v_index(vId: INDEXID) { (index) in
-             
+        self.v_array(vId: TABID) { () -> Array<VueData>? in
+            
+            return array
+            
+        }
+                       
+        
+    }
+    private func dealContent(){
+        
+        var views = [GetViewProtocol]()
+        views.append(NewsHotRecom())
+        views.append(NewsHotList())
+        views.append(NewsHotTopic())
+        views.append(NewsHotStar())
+
+        var contentArray = [VueData]()
+        for (index,value) in views.enumerated(){
+            let m = TabContentCellModel()
+            m.view = value.getView()
+            if index == 0{
+                m.view?.viewLoad()
+                m.isL = true
+                
+            }
+            contentArray.append(m)
+        }
+        
+        self.v_array(vId: ARRAYID) { () -> Array<VueData>? in
+            
+            return contentArray
             
         }
         
+        self.v_index(vId: TABINDEXID) { (index) in
+            
+            let v = contentArray[index] as! TabContentCellModel
+            if v.isL == false{
+                v.view?.viewLoad()
+                v.isL = true
+                
+            }
+            
+        }
     }
   
    

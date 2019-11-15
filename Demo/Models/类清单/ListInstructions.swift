@@ -10,7 +10,7 @@ import UIKit
 
 class ListInstructions: Configuration {
 
-    override func getTabBar() -> BaseTabBarController{
+    override func getTabBar() -> UIViewController{
          
       let tab = BaseTabBarController()
       tab.addChildVC(childVC: ListHome().v_viewController(), childTitle: "收集箱", image: UIImage.init(named: "list_1"), selectedImage: UIImage.init(named: "list_1"))
