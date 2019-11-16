@@ -29,7 +29,7 @@ class KnowledgeMessage:Vue,V_ViewControllerProtocol{
         
      
         var array = [VueData]()
-        let m = NavTitleCellModel()
+        let m = KnowledgeMessageNavCellModel()
         m.name = "消息"
         array.append(m)
         self.v_array(vId: NAVARRAYID) { () -> Array<VueData>? in

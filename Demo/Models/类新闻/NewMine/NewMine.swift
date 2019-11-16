@@ -19,16 +19,24 @@ class NewMine:Vue,V_ViewControllerProtocol{
     }
     
     override func v_start() {
-                
+        dealStatus()
         dealNav()
         dealContent()
       
     }
+    private func dealStatus(){
+        
+        self.v_if(vId: STATUSID) { () -> Bool? in
+            
+            return true
+        }
+        
+    }
     private func dealNav(){
        
         var array = [VueData]()
-        let m = NavTitleCellModel()
-        m.name = "NewMine"
+        let m = NewMineNavCellModel()
+        m.name = "我"
         array.append(m)
         self.v_array(vId: NAVARRAYID) { () -> Array<VueData>? in
             return array
@@ -46,7 +54,7 @@ class NewMine:Vue,V_ViewControllerProtocol{
          var array = [VueData]()
          for value in titles {
                     
-             let m = SetupCellModel()
+             let m = TodoCellModel()
              m.name = value
              array.append(m)
                     

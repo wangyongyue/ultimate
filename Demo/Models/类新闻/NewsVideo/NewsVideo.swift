@@ -30,8 +30,8 @@ class NewsVideo:Vue,V_ViewControllerProtocol{
         
      
         var array = [VueData]()
-        let m = NavTitleCellModel()
-        m.name = "NewsVideo"
+        let m = NewsVideoNavCellModel()
+        m.name = "视频"
         array.append(m)
         self.v_array(vId: NAVARRAYID) { () -> Array<VueData>? in
             return array
@@ -47,6 +47,7 @@ class NewsVideo:Vue,V_ViewControllerProtocol{
         let titles = ["推荐","小视频","直播","超新星","精选","游戏","军事"]
         var array = [VueData]()
         for value in titles {
+            
             let m = TabHeaderCellModel()
             m.name = value
             array.append(m)

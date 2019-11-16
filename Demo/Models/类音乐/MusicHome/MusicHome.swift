@@ -27,8 +27,8 @@ class MusicHome:Vue,V_ViewControllerProtocol{
     private func dealNav(){
         
         var array = [VueData]()
-        let m = NavTitleCellModel()
-        m.name = "MusicHome"
+        let m = MusicHomeNavCellModel()
+        m.name = "音乐馆"
         array.append(m)
         self.v_array(vId: NAVARRAYID) { () -> Array<VueData>? in
             return array
@@ -43,15 +43,14 @@ class MusicHome:Vue,V_ViewControllerProtocol{
        POST().request(params: self.http) { (isK, data) in
                        
               
-         let titles = ["字体颜色note","背景图片note"]
          var array = [VueData]()
-         for value in titles {
-                    
-             let m = SetupCellModel()
-             m.name = value
-             array.append(m)
-                    
-         }
+        array.append(MusicHomeCellModel())
+        array.append(MusicHomeCellModel())
+        array.append(MusicHomeCellModel())
+        array.append(MusicHomeCellModel())
+        array.append(MusicHomeCellModel())
+        array.append(MusicHomeCellModel())
+
          self.v_array(vId: ARRAYID) { () -> Array<VueData>? in
              return array
                     

@@ -29,8 +29,8 @@ class MusicDynamic:Vue,V_ViewControllerProtocol{
         
      
         var array = [VueData]()
-        let m = NavTitleCellModel()
-        m.name = "NewsHome"
+        let m = MusicDynamicNavCellModel()
+        m.name = "动态"
         array.append(m)
         self.v_array(vId: NAVARRAYID) { () -> Array<VueData>? in
             return array

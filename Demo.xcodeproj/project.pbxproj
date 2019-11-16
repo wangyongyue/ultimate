@@ -349,6 +349,26 @@
 		45B04B54237DB29A002B650B /* VVIPVariety.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B04B53237DB29A002B650B /* VVIPVariety.swift */; };
 		45B04B56237DB2AB002B650B /* VVIPAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B04B55237DB2AB002B650B /* VVIPAnimation.swift */; };
 		45B04B58237DB2F9002B650B /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B04B57237DB2F9002B650B /* TabView.swift */; };
+		45B04B5B237EE991002B650B /* KnowledgeHomeNavCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B04B5A237EE991002B650B /* KnowledgeHomeNavCell.swift */; };
+		45B04B5D237EE9A0002B650B /* KnowledgeMembersNavCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B04B5C237EE9A0002B650B /* KnowledgeMembersNavCell.swift */; };
+		45B04B5F237EE9AC002B650B /* KnowledgeMessageNavCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B04B5E237EE9AC002B650B /* KnowledgeMessageNavCell.swift */; };
+		45B04B61237EE9F0002B650B /* KnowledgeMineNavCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B04B60237EE9F0002B650B /* KnowledgeMineNavCell.swift */; };
+		45B04B65237F9D27002B650B /* MusicHomeNavCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B04B64237F9D27002B650B /* MusicHomeNavCell.swift */; };
+		45B04B67237F9D39002B650B /* MusicRecommendNavCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B04B66237F9D39002B650B /* MusicRecommendNavCell.swift */; };
+		45B04B69237F9D45002B650B /* MusicDynamicNavCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B04B68237F9D45002B650B /* MusicDynamicNavCell.swift */; };
+		45B04B6B237F9D50002B650B /* MusicMineNavCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B04B6A237F9D50002B650B /* MusicMineNavCell.swift */; };
+		45B04B6D237F9D60002B650B /* MusicHomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B04B6C237F9D60002B650B /* MusicHomeCell.swift */; };
+		45B04B6F237F9D6F002B650B /* MusicRecommendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B04B6E237F9D6F002B650B /* MusicRecommendCell.swift */; };
+		45B04B71237F9D79002B650B /* MusicDynamicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B04B70237F9D79002B650B /* MusicDynamicCell.swift */; };
+		45B04B73237F9D87002B650B /* MusicMineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B04B72237F9D87002B650B /* MusicMineCell.swift */; };
+		45B04B77237FD68A002B650B /* NewsHomeNavCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B04B76237FD68A002B650B /* NewsHomeNavCell.swift */; };
+		45B04B79237FD698002B650B /* NewsVideoNavCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B04B78237FD698002B650B /* NewsVideoNavCell.swift */; };
+		45B04B7B237FD6A6002B650B /* NewsHotNavCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B04B7A237FD6A6002B650B /* NewsHotNavCell.swift */; };
+		45B04B7D237FD6B3002B650B /* NewMineNavCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B04B7C237FD6B3002B650B /* NewMineNavCell.swift */; };
+		45B04B7F237FD6C6002B650B /* NewsHomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B04B7E237FD6C6002B650B /* NewsHomeCell.swift */; };
+		45B04B81237FD6DA002B650B /* NewsVideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B04B80237FD6DA002B650B /* NewsVideoCell.swift */; };
+		45B04B83237FD6E5002B650B /* NewsHotCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B04B82237FD6E5002B650B /* NewsHotCell.swift */; };
+		45B04B85237FD6F4002B650B /* NewMineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B04B84237FD6F4002B650B /* NewMineCell.swift */; };
 		B617D314845B89B19697980D /* Pods_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42FFFBDD17AFD3F17E4B29D5 /* Pods_Demo.framework */; };
 		D44991443EF71FB9075AD326 /* Pods_DemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFB92A2976401FA38EB89D96 /* Pods_DemoUITests.framework */; };
 /* End PBXBuildFile section */
@@ -720,6 +740,26 @@
 		45B04B53237DB29A002B650B /* VVIPVariety.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VVIPVariety.swift; sourceTree = "<group>"; };
 		45B04B55237DB2AB002B650B /* VVIPAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VVIPAnimation.swift; sourceTree = "<group>"; };
 		45B04B57237DB2F9002B650B /* TabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
+		45B04B5A237EE991002B650B /* KnowledgeHomeNavCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnowledgeHomeNavCell.swift; sourceTree = "<group>"; };
+		45B04B5C237EE9A0002B650B /* KnowledgeMembersNavCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnowledgeMembersNavCell.swift; sourceTree = "<group>"; };
+		45B04B5E237EE9AC002B650B /* KnowledgeMessageNavCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnowledgeMessageNavCell.swift; sourceTree = "<group>"; };
+		45B04B60237EE9F0002B650B /* KnowledgeMineNavCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnowledgeMineNavCell.swift; sourceTree = "<group>"; };
+		45B04B64237F9D27002B650B /* MusicHomeNavCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicHomeNavCell.swift; sourceTree = "<group>"; };
+		45B04B66237F9D39002B650B /* MusicRecommendNavCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicRecommendNavCell.swift; sourceTree = "<group>"; };
+		45B04B68237F9D45002B650B /* MusicDynamicNavCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicDynamicNavCell.swift; sourceTree = "<group>"; };
+		45B04B6A237F9D50002B650B /* MusicMineNavCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicMineNavCell.swift; sourceTree = "<group>"; };
+		45B04B6C237F9D60002B650B /* MusicHomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicHomeCell.swift; sourceTree = "<group>"; };
+		45B04B6E237F9D6F002B650B /* MusicRecommendCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicRecommendCell.swift; sourceTree = "<group>"; };
+		45B04B70237F9D79002B650B /* MusicDynamicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicDynamicCell.swift; sourceTree = "<group>"; };
+		45B04B72237F9D87002B650B /* MusicMineCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicMineCell.swift; sourceTree = "<group>"; };
+		45B04B76237FD68A002B650B /* NewsHomeNavCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsHomeNavCell.swift; sourceTree = "<group>"; };
+		45B04B78237FD698002B650B /* NewsVideoNavCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsVideoNavCell.swift; sourceTree = "<group>"; };
+		45B04B7A237FD6A6002B650B /* NewsHotNavCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsHotNavCell.swift; sourceTree = "<group>"; };
+		45B04B7C237FD6B3002B650B /* NewMineNavCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMineNavCell.swift; sourceTree = "<group>"; };
+		45B04B7E237FD6C6002B650B /* NewsHomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsHomeCell.swift; sourceTree = "<group>"; };
+		45B04B80237FD6DA002B650B /* NewsVideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsVideoCell.swift; sourceTree = "<group>"; };
+		45B04B82237FD6E5002B650B /* NewsHotCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsHotCell.swift; sourceTree = "<group>"; };
+		45B04B84237FD6F4002B650B /* NewMineCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMineCell.swift; sourceTree = "<group>"; };
 		5A111DE660BB3C699F05D563 /* Pods-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.release.xcconfig"; path = "Target Support Files/Pods-Demo/Pods-Demo.release.xcconfig"; sourceTree = "<group>"; };
 		6B3527A4D3CA321520E453EF /* Pods-DemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoUITests.release.xcconfig"; path = "Target Support Files/Pods-DemoUITests/Pods-DemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7821C1C7F7555F4E07756901 /* Pods_DemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -988,6 +1028,7 @@
 		184FB66E237E7DAE00410DF2 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				45B04B59237EE95D002B650B /* NavigationCells */,
 				184FB66F237E807800410DF2 /* KnowledgeAttentionCell.swift */,
 				184FB671237E808B00410DF2 /* KnowledgeRecomCell.swift */,
 				184FB673237E809D00410DF2 /* KnowledgeHotCell.swift */,
@@ -1023,6 +1064,7 @@
 			isa = PBXGroup;
 			children = (
 				1884C742237BD0DA00A05B9A /* MusicInstructions.swift */,
+				45B04B62237F9D03002B650B /* Cells */,
 				184FB64F237E568900410DF2 /* MusicTools */,
 				18C6D9CB237C0AE900BCF77E /* MusicHome */,
 				18C6D9CA237C0AE700BCF77E /* MusicRecommend */,
@@ -1036,6 +1078,7 @@
 			isa = PBXGroup;
 			children = (
 				1884C740237BD0D100A05B9A /* NewsInstructions.swift */,
+				45B04B74237FD669002B650B /* Cells */,
 				184FB5D5237E38FD00410DF2 /* NewsTools */,
 				18C6D9BF237C0A6E00BCF77E /* NewsHome */,
 				18C6D9BE237C0A6A00BCF77E /* NewsVideo */,
@@ -2153,6 +2196,63 @@
 			path = VideoVIPChild;
 			sourceTree = "<group>";
 		};
+		45B04B59237EE95D002B650B /* NavigationCells */ = {
+			isa = PBXGroup;
+			children = (
+				45B04B5A237EE991002B650B /* KnowledgeHomeNavCell.swift */,
+				45B04B5C237EE9A0002B650B /* KnowledgeMembersNavCell.swift */,
+				45B04B5E237EE9AC002B650B /* KnowledgeMessageNavCell.swift */,
+				45B04B60237EE9F0002B650B /* KnowledgeMineNavCell.swift */,
+			);
+			path = NavigationCells;
+			sourceTree = "<group>";
+		};
+		45B04B62237F9D03002B650B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				45B04B6C237F9D60002B650B /* MusicHomeCell.swift */,
+				45B04B6E237F9D6F002B650B /* MusicRecommendCell.swift */,
+				45B04B70237F9D79002B650B /* MusicDynamicCell.swift */,
+				45B04B72237F9D87002B650B /* MusicMineCell.swift */,
+				45B04B63237F9D0B002B650B /* NavigationCells */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		45B04B63237F9D0B002B650B /* NavigationCells */ = {
+			isa = PBXGroup;
+			children = (
+				45B04B64237F9D27002B650B /* MusicHomeNavCell.swift */,
+				45B04B66237F9D39002B650B /* MusicRecommendNavCell.swift */,
+				45B04B68237F9D45002B650B /* MusicDynamicNavCell.swift */,
+				45B04B6A237F9D50002B650B /* MusicMineNavCell.swift */,
+			);
+			path = NavigationCells;
+			sourceTree = "<group>";
+		};
+		45B04B74237FD669002B650B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				45B04B75237FD671002B650B /* NavigationCells */,
+				45B04B7E237FD6C6002B650B /* NewsHomeCell.swift */,
+				45B04B80237FD6DA002B650B /* NewsVideoCell.swift */,
+				45B04B82237FD6E5002B650B /* NewsHotCell.swift */,
+				45B04B84237FD6F4002B650B /* NewMineCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		45B04B75237FD671002B650B /* NavigationCells */ = {
+			isa = PBXGroup;
+			children = (
+				45B04B76237FD68A002B650B /* NewsHomeNavCell.swift */,
+				45B04B78237FD698002B650B /* NewsVideoNavCell.swift */,
+				45B04B7A237FD6A6002B650B /* NewsHotNavCell.swift */,
+				45B04B7C237FD6B3002B650B /* NewMineNavCell.swift */,
+			);
+			path = NavigationCells;
+			sourceTree = "<group>";
+		};
 		541B328BABE8FA40933D1E55 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -2454,11 +2554,13 @@
 			files = (
 				184FB61C237E41D300410DF2 /* NewsHotStar.swift in Sources */,
 				45B04B1B237DA22D002B650B /* Video70.swift in Sources */,
+				45B04B67237F9D39002B650B /* MusicRecommendNavCell.swift in Sources */,
 				184FB5C6237D5AB200410DF2 /* ListTasks.swift in Sources */,
 				45B04B26237DA2DB002B650B /* VideoHotFollow.swift in Sources */,
 				184FB600237E3F8F00410DF2 /* NewsSports.swift in Sources */,
 				18C6D9D3237C0B5300BCF77E /* MusicMine.swift in Sources */,
 				1884C73B237BD0B300A05B9A /* ListInstructions.swift in Sources */,
+				45B04B61237EE9F0002B650B /* KnowledgeMineNavCell.swift in Sources */,
 				1884C76D237BF43000A05B9A /* ShareHome.swift in Sources */,
 				45B04AD1237D9102002B650B /* SMFashion.swift in Sources */,
 				184FB634237E511100410DF2 /* KnowAttention.swift in Sources */,
@@ -2480,10 +2582,12 @@
 				45B04B24237DA2CE002B650B /* VideoHotRecom.swift in Sources */,
 				18C6DA41237D413A00BCF77E /* ShareChat.swift in Sources */,
 				184FB5F6237E3F3600410DF2 /* NewsVideos.swift in Sources */,
+				45B04B5D237EE9A0002B650B /* KnowledgeMembersNavCell.swift in Sources */,
 				45B04B34237DA3AC002B650B /* VideoSquare.swift in Sources */,
 				18C6D9B9237C0A3400BCF77E /* VideoDubbles.swift in Sources */,
 				18C6DA29237D26D500BCF77E /* SVAbout.swift in Sources */,
 				184FB68A237EA04E00410DF2 /* TodoCell.swift in Sources */,
+				45B04B85237FD6F4002B650B /* NewMineCell.swift in Sources */,
 				1884C757237BF09900A05B9A /* NotesAssistant.swift in Sources */,
 				184FB66C237E741B00410DF2 /* MusicPurchased.swift in Sources */,
 				18C6DA62237D458700BCF77E /* ShareFoundDetails.swift in Sources */,
@@ -2505,6 +2609,7 @@
 				45B04AF3237D93D8002B650B /* SMD5g.swift in Sources */,
 				184FB618237E41AE00410DF2 /* NewsHotList.swift in Sources */,
 				1884C741237BD0D100A05B9A /* NewsInstructions.swift in Sources */,
+				45B04B73237F9D87002B650B /* MusicMineCell.swift in Sources */,
 				18C6D9DD237C0CD500BCF77E /* KnowledgeMessage.swift in Sources */,
 				45B04B50237DB27B002B650B /* VVIPFilm.swift in Sources */,
 				184FB686237E9B2300410DF2 /* KnowledgeMembersCell.swift in Sources */,
@@ -2515,6 +2620,7 @@
 				18C6DA2B237D271100BCF77E /* SVWorks.swift in Sources */,
 				45B04AEA237D935A002B650B /* SMClassHaidun.swift in Sources */,
 				18911BBE22CB4281007618B0 /* ViewController.swift in Sources */,
+				45B04B77237FD68A002B650B /* NewsHomeNavCell.swift in Sources */,
 				184FB5FC237E3F6D00410DF2 /* NewsEntertainment.swift in Sources */,
 				18C6DA22237D266E00BCF77E /* SVMention.swift in Sources */,
 				1884C743237BD0DA00A05B9A /* MusicInstructions.swift in Sources */,
@@ -2549,6 +2655,7 @@
 				184FB674237E809D00410DF2 /* KnowledgeHotCell.swift in Sources */,
 				18C6DA5E237D448000BCF77E /* ShareLatest.swift in Sources */,
 				45985A7D22ED51C200FB19F4 /* TabHeaderCell.swift in Sources */,
+				45B04B71237F9D79002B650B /* MusicDynamicCell.swift in Sources */,
 				45B04ACD237D90E9002B650B /* SMLive.swift in Sources */,
 				184FB616237E419D00410DF2 /* NewsHotRecom.swift in Sources */,
 				184FB60E237E40D600410DF2 /* NewsVideoSupernova.swift in Sources */,
@@ -2571,6 +2678,7 @@
 				184FB64A237E538800410DF2 /* KnowledgeRecom.swift in Sources */,
 				18911C0122CB4DC6007618B0 /* Home.swift in Sources */,
 				184FB5C2237D5A9300410DF2 /* ListSounds.swift in Sources */,
+				45B04B7F237FD6C6002B650B /* NewsHomeCell.swift in Sources */,
 				18C6D9C3237C0A9300BCF77E /* NewsVideo.swift in Sources */,
 				45B04ADF237D9296002B650B /* SMRecommendations.swift in Sources */,
 				184FB5BC237D5A7300410DF2 /* ListTabs.swift in Sources */,
@@ -2581,6 +2689,7 @@
 				45B04B3F237DA439002B650B /* VideoDownload.swift in Sources */,
 				45B04B28237DA2EA002B650B /* VideoHotSmall.swift in Sources */,
 				45B04AD5237D9124002B650B /* SMSupermarket.swift in Sources */,
+				45B04B7D237FD6B3002B650B /* NewMineNavCell.swift in Sources */,
 				45985A7F22ED51D200FB19F4 /* TabContentCell.swift in Sources */,
 				18A3E40922FBBFBC0010E560 /* SetupCell.swift in Sources */,
 				184FB5E5237E3C7000410DF2 /* NewsHotDetails.swift in Sources */,
@@ -2625,6 +2734,7 @@
 				184FB608237E40AF00410DF2 /* NewsVideoRecom.swift in Sources */,
 				18C6DA6B237D469800BCF77E /* ShareFashion.swift in Sources */,
 				1884C761237BF21B00A05B9A /* SVHome.swift in Sources */,
+				45B04B5B237EE991002B650B /* KnowledgeHomeNavCell.swift in Sources */,
 				45B04B15237DA20B002B650B /* VideoQiPa.swift in Sources */,
 				184FB640237E52EA00410DF2 /* KnowledgeBook.swift in Sources */,
 				18C6D9FD237CEC1500BCF77E /* NotesSetting.swift in Sources */,
@@ -2637,6 +2747,7 @@
 				18911BF522CB4992007618B0 /* Image.swift in Sources */,
 				18C6D9F9237CEBF800BCF77E /* NotesBook.swift in Sources */,
 				184FB646237E530300410DF2 /* KnowledgeLive.swift in Sources */,
+				45B04B65237F9D27002B650B /* MusicHomeNavCell.swift in Sources */,
 				18C6DA73237D46CE00BCF77E /* ShareBackpack.swift in Sources */,
 				184FB62B237E505F00410DF2 /* KnowledgeMembersDetails.swift in Sources */,
 				45B04B02237D94E5002B650B /* SMMyOrders.swift in Sources */,
@@ -2663,6 +2774,7 @@
 				18C6D9C7237C0AA600BCF77E /* NewMine.swift in Sources */,
 				18C6DA43237D414A00BCF77E /* ShareTransaction.swift in Sources */,
 				45B04B4C237DB260002B650B /* VVIPSelection.swift in Sources */,
+				45B04B5F237EE9AC002B650B /* KnowledgeMessageNavCell.swift in Sources */,
 				184FB602237E3FA200410DF2 /* NewsMilitary.swift in Sources */,
 				45B04AED237D93AA002B650B /* SMDAttention.swift in Sources */,
 				184FB65C237E72E500410DF2 /* MusicRecommendDetails.swift in Sources */,
@@ -2670,6 +2782,7 @@
 				45985A8322ED894F00FB19F4 /* MenuData.swift in Sources */,
 				45B04B3B237DA419002B650B /* VideoCollection.swift in Sources */,
 				184FB610237E40E000410DF2 /* NewsVideoSelection.swift in Sources */,
+				45B04B7B237FD6A6002B650B /* NewsHotNavCell.swift in Sources */,
 				45B04B49237DA48A002B650B /* VideoTheme.swift in Sources */,
 				18A3E40C22FBC5210010E560 /* MenuCell.swift in Sources */,
 				18C6D9CF237C0B4400BCF77E /* MusicRecommend.swift in Sources */,
@@ -2694,6 +2807,7 @@
 				18C6DA7A237D492200BCF77E /* TraTripOrder.swift in Sources */,
 				18C6DA26237D268C00BCF77E /* SVMessageDetails.swift in Sources */,
 				45B04B2D237DA35B002B650B /* VideoSports.swift in Sources */,
+				45B04B6B237F9D50002B650B /* MusicMineNavCell.swift in Sources */,
 				18C6DA1E237D261C00BCF77E /* SVFans.swift in Sources */,
 				184FB664237E738700410DF2 /* MusicAttention.swift in Sources */,
 				184FB636237E511E00410DF2 /* KnowFavorites.swift in Sources */,
@@ -2704,6 +2818,7 @@
 				1884C737237BD09F00A05B9A /* ShareInstructions.swift in Sources */,
 				18C6D9D1237C0B4B00BCF77E /* MusicDynamic.swift in Sources */,
 				184FB5EA237E3CC300410DF2 /* NewMineHistory.swift in Sources */,
+				45B04B6D237F9D60002B650B /* MusicHomeCell.swift in Sources */,
 				184FB59F237D563500410DF2 /* TraJourneyDetails.swift in Sources */,
 				18C6DA6D237D46A600BCF77E /* ShareSneakers.swift in Sources */,
 				184FB5B3237D59B100410DF2 /* ListHomeDetails.swift in Sources */,
@@ -2715,14 +2830,17 @@
 				18C6D9FB237CEC0700BCF77E /* NotesHelp.swift in Sources */,
 				184FB688237E9D9300410DF2 /* KnowledgeMessageCell.swift in Sources */,
 				184FB672237E808B00410DF2 /* KnowledgeRecomCell.swift in Sources */,
+				45B04B79237FD698002B650B /* NewsVideoNavCell.swift in Sources */,
 				45B04B1F237DA25C002B650B /* VideoFilm.swift in Sources */,
 				18C6DA69237D468D00BCF77E /* ShareSecondHand.swift in Sources */,
 				18C6DA67237D467F00BCF77E /* ShareAll.swift in Sources */,
 				1884C771237BF44500A05B9A /* ShareGood.swift in Sources */,
 				18C6D9E8237CEA7C00BCF77E /* NotesDetailedList.swift in Sources */,
 				184FB5CC237D5ADA00410DF2 /* ListPublicNumber.swift in Sources */,
+				45B04B81237FD6DA002B650B /* NewsVideoCell.swift in Sources */,
 				184FB63E237E52E100410DF2 /* KnowledgeMemberRecom.swift in Sources */,
 				184FB612237E40E700410DF2 /* NewsVideoGame.swift in Sources */,
+				45B04B69237F9D45002B650B /* MusicDynamicNavCell.swift in Sources */,
 				458F053922D6163300271BB4 /* POST.swift in Sources */,
 				45B04B2B237DA344002B650B /* VideoVIP.swift in Sources */,
 				18C6D9DF237C0CE200BCF77E /* KnowledgeMine.swift in Sources */,
@@ -2735,8 +2853,10 @@
 				18911C0922CB51F6007618B0 /* BaseTabBarController.swift in Sources */,
 				18C6D9F3237CEBB600BCF77E /* NotesMyAccount.swift in Sources */,
 				45B04B13237DA1EE002B650B /* VideoRecommendation.swift in Sources */,
+				45B04B83237FD6E5002B650B /* NewsHotCell.swift in Sources */,
 				184FB59D237D562600410DF2 /* TraDiscovery.swift in Sources */,
 				1884C765237BF22A00A05B9A /* SVMessage.swift in Sources */,
+				45B04B6F237F9D6F002B650B /* MusicRecommendCell.swift in Sources */,
 				18911BF722CB49A1007618B0 /* Color.swift in Sources */,
 				184FB60A237E40C300410DF2 /* NewsVideoSmall.swift in Sources */,
 				45985A7822ED4A2400FB19F4 /* Cells.swift in Sources */,

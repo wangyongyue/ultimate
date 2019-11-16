@@ -31,8 +31,8 @@ class NewsHot:Vue,V_ViewControllerProtocol{
         
      
         var array = [VueData]()
-        let m = NavTitleCellModel()
-        m.name = "NewsHot"
+        let m = NewsHotNavCellModel()
+        m.name = "热推"
         array.append(m)
         self.v_array(vId: NAVARRAYID) { () -> Array<VueData>? in
             return array

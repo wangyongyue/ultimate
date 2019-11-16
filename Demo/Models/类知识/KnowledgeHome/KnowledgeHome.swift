@@ -29,7 +29,7 @@ class KnowledgeHome:Vue,V_ViewControllerProtocol{
         
      
         var array = [VueData]()
-        let m = NavTitleCellModel()
+        let m = KnowledgeHomeNavCellModel()
         m.name = "首页"
         array.append(m)
         self.v_array(vId: NAVARRAYID) { () -> Array<VueData>? in

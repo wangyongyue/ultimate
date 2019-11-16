@@ -27,7 +27,7 @@ class NewMineMessage:Vue,V_ViewControllerProtocol{
        
         var array = [VueData]()
         let m = NavBackCellModel()
-        m.name = "NewMineMessage"
+        m.name = "消息"
         array.append(m)
         self.v_array(vId: NAVARRAYID) { () -> Array<VueData>? in
             return array

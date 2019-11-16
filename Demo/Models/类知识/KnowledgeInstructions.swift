@@ -21,6 +21,13 @@ class KnowledgeInstructions: Configuration {
         Vue.register(aClass: KnowledgeMessageCellModel.classForCoder(), toClass: KnowledgeMessageCell.classForCoder())
 
         
+        Vue.register(aClass: KnowledgeHomeNavCellModel.classForCoder(), toClass: KnowledgeHomeNavCell.classForCoder())
+        Vue.register(aClass: KnowledgeMembersNavCellModel.classForCoder(), toClass: KnowledgeMembersNavCell.classForCoder())
+        Vue.register(aClass: KnowledgeMessageNavCellModel.classForCoder(), toClass: KnowledgeMessageNavCell.classForCoder())
+        Vue.register(aClass: KnowledgeMineNavCellModel.classForCoder(), toClass: KnowledgeMineNavCell.classForCoder())
+
+        
+        
     }
 
     override func getTabBar() -> UIViewController{

@@ -35,7 +35,7 @@ class KnowledgeMine:Vue,V_ViewControllerProtocol{
     private func dealNav(){
         
         var array = [VueData]()
-        let m = NavTitleCellModel()
+        let m = KnowledgeMineNavCellModel()
         m.name = "我的"
         array.append(m)
         self.v_array(vId: NAVARRAYID) { () -> Array<VueData>? in

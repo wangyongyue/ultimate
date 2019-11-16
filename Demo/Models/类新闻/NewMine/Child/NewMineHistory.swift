@@ -27,7 +27,7 @@ class NewMineHistory:Vue,V_ViewControllerProtocol{
        
         var array = [VueData]()
         let m = NavBackCellModel()
-        m.name = "NewMineHistory"
+        m.name = "历史"
         array.append(m)
         self.v_array(vId: NAVARRAYID) { () -> Array<VueData>? in
             return array

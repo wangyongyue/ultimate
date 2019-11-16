@@ -7,8 +7,25 @@
 //
 
 import UIKit
-
+import VueSwift
 class NewsInstructions: Configuration {
+    
+    override init() {
+        super.init()
+        
+        Vue.register(aClass: NewsHomeCellModel.classForCoder(), toClass: NewsHomeCell.classForCoder())
+        Vue.register(aClass: NewsVideoCellModel.classForCoder(), toClass: NewsVideoCell.classForCoder())
+        Vue.register(aClass: NewsHotCellModel.classForCoder(), toClass: NewsHotCell.classForCoder())
+        Vue.register(aClass: NewMineCellModel.classForCoder(), toClass: NewMineCell.classForCoder())
+        
+        Vue.register(aClass: NewsHomeNavCellModel.classForCoder(), toClass: NewsHomeNavCell.classForCoder())
+        Vue.register(aClass: NewsVideoNavCellModel.classForCoder(), toClass: NewsVideoNavCell.classForCoder())
+        Vue.register(aClass: NewsHotNavCellModel.classForCoder(), toClass: NewsHotNavCell.classForCoder())
+        Vue.register(aClass: NewMineNavCellModel.classForCoder(), toClass: NewMineNavCell.classForCoder())
+
+        
+        
+    }
 
     override func getTabBar() -> UIViewController{
          

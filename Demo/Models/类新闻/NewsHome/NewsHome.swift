@@ -29,8 +29,8 @@ class NewsHome:Vue,V_ViewControllerProtocol{
         
      
         var array = [VueData]()
-        let m = NavTitleCellModel()
-        m.name = "NewsHome"
+        let m = NewsHomeNavCellModel()
+        m.name = "新闻"
         array.append(m)
         self.v_array(vId: NAVARRAYID) { () -> Array<VueData>? in
             return array

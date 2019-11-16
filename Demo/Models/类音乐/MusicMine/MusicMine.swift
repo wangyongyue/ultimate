@@ -18,16 +18,25 @@ class MusicMine:Vue,V_ViewControllerProtocol{
     }
     
     override func v_start() {
-                
+            
+        dealStatus()
         dealNav()
         dealContent()
       
     }
+    private func dealStatus(){
+        
+        self.v_if(vId: STATUSID) { () -> Bool? in
+            
+            return true
+        }
+        
+    }
     private func dealNav(){
         
         var array = [VueData]()
-        let m = NavTitleCellModel()
-        m.name = "MusicMine"
+        let m = MusicMineNavCellModel()
+        m.name = "我的"
         array.append(m)
         self.v_array(vId: NAVARRAYID) { () -> Array<VueData>? in
             return array
@@ -45,7 +54,7 @@ class MusicMine:Vue,V_ViewControllerProtocol{
          var array = [VueData]()
          for value in titles {
                     
-             let m = SetupCellModel()
+             let m = TodoCellModel()
              m.name = value
              array.append(m)
                     

@@ -7,8 +7,25 @@
 //
 
 import UIKit
-
+import VueSwift
 class MusicInstructions: Configuration {
+    
+    override init() {
+        super.init()
+        
+        Vue.register(aClass: MusicHomeCellModel.classForCoder(), toClass: MusicHomeCell.classForCoder())
+        Vue.register(aClass: MusicRecommendCellModel.classForCoder(), toClass: MusicRecommendCell.classForCoder())
+        Vue.register(aClass: MusicDynamicCellModel.classForCoder(), toClass: MusicDynamicCell.classForCoder())
+        Vue.register(aClass: MusicMineCellModel.classForCoder(), toClass: MusicMineCell.classForCoder())
+        
+        Vue.register(aClass: MusicHomeNavCellModel.classForCoder(), toClass: MusicHomeNavCell.classForCoder())
+        Vue.register(aClass: MusicRecommendNavCellModel.classForCoder(), toClass: MusicRecommendNavCell.classForCoder())
+        Vue.register(aClass: MusicDynamicNavCellModel.classForCoder(), toClass: MusicDynamicNavCell.classForCoder())
+        Vue.register(aClass: MusicMineNavCellModel.classForCoder(), toClass: MusicMineNavCell.classForCoder())
+
+        
+        
+    }
 
     override func getTabBar() -> UIViewController{
          

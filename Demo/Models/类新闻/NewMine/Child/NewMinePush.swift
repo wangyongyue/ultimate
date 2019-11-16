@@ -28,7 +28,7 @@ class NewMinePush:Vue,V_ViewControllerProtocol{
        
         var array = [VueData]()
         let m = NavBackCellModel()
-        m.name = "NewMineRedEnvelope"
+        m.name = "已推"
         array.append(m)
         self.v_array(vId: NAVARRAYID) { () -> Array<VueData>? in
             return array

@@ -28,15 +28,14 @@ class NewsHotRecom:Vue,GetViewProtocol{
        POST().request(params: self.http) { (isK, data) in
                        
               
-         let titles = ["字体颜色note","背景图片note"]
          var array = [VueData]()
-         for value in titles {
-                    
-             let m = SetupCellModel()
-             m.name = value
-             array.append(m)
-                    
-         }
+         array.append(NewsHotCellModel())
+        array.append(NewsHotCellModel())
+        array.append(NewsHotCellModel())
+        array.append(NewsHotCellModel())
+        array.append(NewsHotCellModel())
+        array.append(NewsHotCellModel())
+
          self.v_array(vId: ARRAYID) { () -> Array<VueData>? in
              return array
                     
