@@ -7,9 +7,27 @@
 //
 
 import UIKit
+import VueSwift
 
 class ShortVideoInstructions: Configuration {
 
+    
+    override init() {
+        super.init()
+        
+        Vue.register(aClass: SVHomeNavCellModel.classForCoder(), toClass: SVHomeNavCell.classForCoder())
+        Vue.register(aClass: SVCityNavCellModel.classForCoder(), toClass: SVCityNavCell.classForCoder())
+        Vue.register(aClass: SVMessageNavCellModel.classForCoder(), toClass: SVMessageNavCell.classForCoder())
+        Vue.register(aClass: SVMineNavCellModel.classForCoder(), toClass: SVMineNavCell.classForCoder())
+
+        Vue.register(aClass: SVHomeCellModel.classForCoder(), toClass: SVHomeCell.classForCoder())
+        Vue.register(aClass: SVCityCellModel.classForCoder(), toClass: SVCityCell.classForCoder())
+        Vue.register(aClass: SVMessageCellModel.classForCoder(), toClass: SVMessageCell.classForCoder())
+        Vue.register(aClass: SVMineCellModel.classForCoder(), toClass: SVMineCell.classForCoder())
+
+
+        
+    }
      override func getTabBar() -> UIViewController{
            
         let tab = BaseTabBarController()

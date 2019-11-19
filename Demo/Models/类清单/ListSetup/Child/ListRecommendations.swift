@@ -27,7 +27,7 @@ class ListRecommendations:Vue,V_ViewControllerProtocol{
         
         var array = [VueData]()
         let m = NavBackCellModel()
-        m.name = "ListRecommendations"
+        m.name = "推荐给好友"
         array.append(m)
         self.v_array(vId: NAVARRAYID) { () -> Array<VueData>? in
             return array

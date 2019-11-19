@@ -27,7 +27,7 @@ class TraTripComplaint:Vue,V_ViewControllerProtocol{
         
         var array = [VueData]()
         let m = NavBackCellModel()
-        m.name = "TraTripComplaint"
+        m.name = "投诉进度"
         array.append(m)
         self.v_array(vId: NAVARRAYID) { () -> Array<VueData>? in
             return array

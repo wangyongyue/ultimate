@@ -27,7 +27,7 @@ class NotesMine:Vue,V_ViewControllerProtocol{
     private func dealNav(){
         
         var array = [VueData]()
-        let m = NavTitleCellModel()
+        let m = NotesMineNavCellModel()
         m.name = "我的"
         array.append(m)
         self.v_array(vId: NAVARRAYID) { () -> Array<VueData>? in
@@ -43,11 +43,11 @@ class NotesMine:Vue,V_ViewControllerProtocol{
        POST().request(params: self.http) { (isK, data) in
                        
               
-         let titles = ["字体颜色note","背景图片note"]
+         let titles = ["我的账户","我的消息","活动","官方笔记本","帮助","设置","关于"]
          var array = [VueData]()
          for value in titles {
                     
-             let m = SetupCellModel()
+             let m = TodoCellModel()
              m.name = value
              array.append(m)
                     
@@ -62,7 +62,17 @@ class NotesMine:Vue,V_ViewControllerProtocol{
         
          self.v_index(vId: INDEXID) { (index) in
              
-             Router.push(NotesMyAccount(), nil, nil)
+            switch index{
+            case 0:Router.push(NotesMyAccount(),nil,nil)
+            case 1:Router.push(NotesMyNews(),nil,nil)
+            case 2:Router.push(NotesEvents(),nil,nil)
+            case 3:Router.push(NotesBook(),nil,nil)
+            case 4:Router.push(NotesHelp(),nil,nil)
+            case 5:Router.push(NotesSetting(),nil,nil)
+            case 6:Router.push(NotesAbout(),nil,nil)
+
+            default:Debug.log("o")
+            }
         }
         
     }

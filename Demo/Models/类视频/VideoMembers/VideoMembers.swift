@@ -31,8 +31,8 @@ class VideoMembers:Vue,V_ViewControllerProtocol{
         
      
         var array = [VueData]()
-        let m = NavTitleCellModel()
-        m.name = "VideoMembers"
+        let m = VideoMembersNavCellModel()
+        m.name = "会员"
         array.append(m)
         self.v_array(vId: NAVARRAYID) { () -> Array<VueData>? in
             return array

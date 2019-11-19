@@ -30,8 +30,8 @@ class VideoDubbles:Vue,V_ViewControllerProtocol{
         
      
         var array = [VueData]()
-        let m = NavTitleCellModel()
-        m.name = "VideoDubbles"
+        let m = VideoDubblesNavCellModel()
+        m.name = "泡泡"
         array.append(m)
         self.v_array(vId: NAVARRAYID) { () -> Array<VueData>? in
             return array

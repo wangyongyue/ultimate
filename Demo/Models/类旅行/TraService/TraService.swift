@@ -28,8 +28,8 @@ class TraService:Vue,V_ViewControllerProtocol{
     private func dealNav(){
         
         var array = [VueData]()
-        let m = NavTitleCellModel()
-        m.name = "TraService"
+        let m = TraServiceNavCellModel()
+        m.name = "客服"
         array.append(m)
         self.v_array(vId: NAVARRAYID) { () -> Array<VueData>? in
             return array
@@ -44,11 +44,11 @@ class TraService:Vue,V_ViewControllerProtocol{
        POST().request(params: self.http) { (isK, data) in
                        
               
-         let titles = ["字体颜色note","背景图片note"]
+         let titles = ["订单咨询","售前咨询","目的地信息","旅行指南","投诉进度"]
          var array = [VueData]()
          for value in titles {
                     
-             let m = SetupCellModel()
+             let m = TodoCellModel()
              m.name = value
              array.append(m)
                     
@@ -63,8 +63,15 @@ class TraService:Vue,V_ViewControllerProtocol{
         
          self.v_index(vId: INDEXID) { (index) in
              
-             Router.push(TraTripOrder(), nil, nil)
-            
+            switch index{
+                case 0:Router.push(TraTripOrder(),nil,nil)
+                case 1:Router.push(TraTripConsultation(),nil,nil)
+                case 2:Router.push(TraTripDestination(),nil,nil)
+                case 3:Router.push(TraTripGuide(),nil,nil)
+                case 4:Router.push(TraTripComplaint(),nil,nil)
+                
+               default:Debug.log("o")
+            }
         }
         
     }

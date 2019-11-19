@@ -7,9 +7,27 @@
 //
 
 import UIKit
+import VueSwift
 
 class ListInstructions: Configuration {
 
+    override init() {
+           
+        super.init()
+        
+        Vue.register(aClass: ListHomeNavCellModel.classForCoder(), toClass: ListHomeNavCell.classForCoder())
+        Vue.register(aClass: ListCalenderNavCellModel.classForCoder(), toClass: ListCalenderNavCell.classForCoder())
+        Vue.register(aClass: ListClockNavCellModel.classForCoder(), toClass: ListClockNavCell.classForCoder())
+        Vue.register(aClass: ListSetupNavCellModel.classForCoder(), toClass: ListSetupNavCell.classForCoder())
+
+        Vue.register(aClass: ListHomeCellModel.classForCoder(), toClass: ListHomeCell.classForCoder())
+        Vue.register(aClass: ListCalenderCellModel.classForCoder(), toClass: ListCalenderCell.classForCoder())
+        Vue.register(aClass: ListClockCellModel.classForCoder(), toClass: ListClockCell.classForCoder())
+        Vue.register(aClass: ListSetupCellModel.classForCoder(), toClass: ListSetupCell.classForCoder())
+
+           
+           
+       }
     override func getTabBar() -> UIViewController{
          
       let tab = BaseTabBarController()

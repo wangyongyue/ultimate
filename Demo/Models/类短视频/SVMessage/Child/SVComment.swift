@@ -29,7 +29,7 @@ class SVComment:Vue,V_ViewControllerProtocol{
         
         var array = [VueData]()
         let m = NavBackCellModel()
-        m.name = "SVComment"
+        m.name = "评论"
         array.append(m)
         self.v_array(vId: NAVARRAYID) { () -> Array<VueData>? in
             return array

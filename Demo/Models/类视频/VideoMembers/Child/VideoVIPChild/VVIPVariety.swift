@@ -27,15 +27,12 @@ class VVIPVariety:Vue,GetViewProtocol{
        POST().request(params: self.http) { (isK, data) in
                        
               
-         let titles = ["字体颜色note","背景图片note"]
          var array = [VueData]()
-         for value in titles {
-                    
-             let m = SetupCellModel()
-             m.name = value
-             array.append(m)
-                    
-         }
+         for i in 1...6 {
+           
+              array.append(VideoMembersCellModel())
+                     
+          }
          self.v_array(vId: ARRAYID) { () -> Array<VueData>? in
              return array
                     

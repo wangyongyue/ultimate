@@ -27,7 +27,7 @@ class ShareFoundDetails:Vue,V_ViewControllerProtocol{
         
         var array = [VueData]()
         let m = NavTitleCellModel()
-        m.name = "ShareFoundDetails"
+        m.name = "详情"
         array.append(m)
         self.v_array(vId: NAVARRAYID) { () -> Array<VueData>? in
             return array

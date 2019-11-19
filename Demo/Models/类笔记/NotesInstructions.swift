@@ -7,9 +7,23 @@
 //
 
 import UIKit
-
+import VueSwift
 class NotesInstructions: Configuration {
+    override init() {
+           super.init()
+           
+           Vue.register(aClass: NotesCellModel.classForCoder(), toClass: NotesCell.classForCoder())
+           Vue.register(aClass: NotesAssistantCellModel.classForCoder(), toClass: NotesAssistantCell.classForCoder())
+           Vue.register(aClass: NotesQuickCellModel.classForCoder(), toClass: NotesQuickCell.classForCoder())
+           Vue.register(aClass: NotesMineCellModel.classForCoder(), toClass: NotesMineCell.classForCoder())
 
+           Vue.register(aClass: NotesNavCellModel.classForCoder(), toClass: NotesNavCell.classForCoder())
+           Vue.register(aClass: NotesAssistantNavCellModel.classForCoder(), toClass: NotesAssistantNavCell.classForCoder())
+           Vue.register(aClass: NotesQuickNavCellModel.classForCoder(), toClass: NotesQuickNavCell.classForCoder())
+           Vue.register(aClass: NotesMineNavCellModel.classForCoder(), toClass: NotesMineNavCell.classForCoder())
+
+           
+       }
      override func getTabBar() -> UIViewController{
        
         let tab = BaseTabBarController()

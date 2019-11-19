@@ -7,9 +7,24 @@
 //
 
 import UIKit
+import VueSwift
 
 class ShareInstructions: Configuration {
+    override init() {
+        super.init()
+        
+        Vue.register(aClass: ShareHomeNavCellModel.classForCoder(), toClass: ShareHomeNavCell.classForCoder())
+        Vue.register(aClass: ShareFoundNavCellModel.classForCoder(), toClass: ShareFoundNavCell.classForCoder())
+        Vue.register(aClass: ShareGoodNavCellModel.classForCoder(), toClass: ShareGoodNavCell.classForCoder())
+        Vue.register(aClass: ShareMineNavCellModel.classForCoder(), toClass: ShareMineNavCell.classForCoder())
 
+        Vue.register(aClass: ShareHomeCellModel.classForCoder(), toClass: ShareHomeCell.classForCoder())
+        Vue.register(aClass: ShareFoundCellModel.classForCoder(), toClass: ShareFoundCell.classForCoder())
+        Vue.register(aClass: ShareGoodCellModel.classForCoder(), toClass: ShareGoodCell.classForCoder())
+        Vue.register(aClass: ShareMineCellModel.classForCoder(), toClass: ShareMineCell.classForCoder())
+
+        
+    }
     override func getTabBar() -> UIViewController{
 
     let tab = BaseTabBarController()
@@ -21,7 +36,7 @@ class ShareInstructions: Configuration {
     return tab
     }
     override func themeColor() -> UIColor{
-        return UIColor.white
+        return UIColor.yellow
     }
     
     override func backgroundColor() -> UIColor{

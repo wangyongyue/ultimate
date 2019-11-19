@@ -27,8 +27,8 @@ class SMMine:Vue,V_ViewControllerProtocol{
     private func dealNav(){
         
         var array = [VueData]()
-        let m = NavTitleCellModel()
-        m.name = "SMMine"
+        let m = SMMineNavCellModel()
+        m.name = "我的"
         array.append(m)
         self.v_array(vId: NAVARRAYID) { () -> Array<VueData>? in
             return array
@@ -43,11 +43,11 @@ class SMMine:Vue,V_ViewControllerProtocol{
        POST().request(params: self.http) { (isK, data) in
                        
               
-         let titles = ["字体颜色note","背景图片note"]
+         let titles = ["待付款","待收货","待评价","退换/售后","我的订单"]
          var array = [VueData]()
          for value in titles {
                     
-             let m = SetupCellModel()
+             let m = TodoCellModel()
              m.name = value
              array.append(m)
                     
@@ -62,8 +62,15 @@ class SMMine:Vue,V_ViewControllerProtocol{
         
          self.v_index(vId: INDEXID) { (index) in
              
-            Router.push(SMBePaid(), nil, nil)
-            
+            switch index{
+                case 0:Router.push(SMBePaid(),nil,nil)
+                case 1:Router.push(SMBeReceived(),nil,nil)
+                case 2:Router.push(SMBeEvaluated(),nil,nil)
+                case 3:Router.push(SMBeReturned(),nil,nil)
+                case 4:Router.push(SMMyOrders(),nil,nil)
+                
+               default:Debug.log("o")
+            }
         }
         
     }

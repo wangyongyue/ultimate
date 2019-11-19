@@ -20,6 +20,8 @@ class ShareMine:Vue,V_ViewControllerProtocol{
     }
     
     override func v_start() {
+        
+       
                 
         dealNav()
         dealContent()
@@ -28,8 +30,8 @@ class ShareMine:Vue,V_ViewControllerProtocol{
     private func dealNav(){
         
         var array = [VueData]()
-        let m = NavTitleCellModel()
-        m.name = "ShareMine"
+        let m = ShareMineNavCellModel()
+        m.name = "我的"
         array.append(m)
         self.v_array(vId: NAVARRAYID) { () -> Array<VueData>? in
             return array
@@ -44,11 +46,11 @@ class ShareMine:Vue,V_ViewControllerProtocol{
        POST().request(params: self.http) { (isK, data) in
                        
               
-         let titles = ["字体颜色note","背景图片note"]
+         let titles = ["通知","私聊","好货交易","我有","想要","标签","直播","发现好友","好友动态","设置"]
          var array = [VueData]()
          for value in titles {
                     
-             let m = SetupCellModel()
+             let m = TodoCellModel()
              m.name = value
              array.append(m)
                     
@@ -63,8 +65,21 @@ class ShareMine:Vue,V_ViewControllerProtocol{
         
          self.v_index(vId: INDEXID) { (index) in
              
-             Router.push(ShareNotice(), nil, nil)
+            switch index{
+               
+                case 0:Router.push(ShareNotice(),nil,nil)
+                case 1:Router.push(ShareChat(),nil,nil)
+                case 2:Router.push(ShareTransaction(),nil,nil)
+                case 3:Router.push(ShareHave(),nil,nil)
+                 case 4:Router.push(ShareWant(),nil,nil)
+                 case 5:Router.push(ShareTag(),nil,nil)
+                 case 6:Router.push(ShareLive(),nil,nil)
+                 case 7:Router.push(ShareFriends(),nil,nil)
+                 case 8:Router.push(ShareSocialUpdates(),nil,nil)
+                 case 9:Router.push(ShareSetting(),nil,nil)
 
+               default:Debug.log("o")
+            }
         }
         
     }

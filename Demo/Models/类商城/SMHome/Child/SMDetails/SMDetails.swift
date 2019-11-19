@@ -30,8 +30,8 @@ class SMDetails:Vue,V_ViewControllerProtocol{
         
      
         var array = [VueData]()
-        let m = NavBackCellModel()
-        m.name = "SMDetails"
+        let m = SMDetailsNavCellModel()
+        m.name = "商品详情"
         array.append(m)
         self.v_array(vId: NAVARRAYID) { () -> Array<VueData>? in
             return array

@@ -28,7 +28,7 @@ class ShareTransaction:Vue,V_ViewControllerProtocol{
         
         var array = [VueData]()
         let m = NavBackCellModel()
-        m.name = "ShareTransaction"
+        m.name = "好货交易"
         array.append(m)
         self.v_array(vId: NAVARRAYID) { () -> Array<VueData>? in
             return array

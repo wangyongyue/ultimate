@@ -29,8 +29,8 @@ class SVMine:Vue,V_ViewControllerProtocol{
         
      
         var array = [VueData]()
-        let m = NavTitleCellModel()
-        m.name = "SVHome"
+        let m = SVMineNavCellModel()
+        m.name = "我的"
         array.append(m)
         self.v_array(vId: NAVARRAYID) { () -> Array<VueData>? in
             return array

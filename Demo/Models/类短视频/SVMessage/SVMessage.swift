@@ -27,8 +27,8 @@ class SVMessage:Vue,V_ViewControllerProtocol{
     private func dealNav(){
         
         var array = [VueData]()
-        let m = NavTitleCellModel()
-        m.name = "SVMessage"
+        let m = SVMessageNavCellModel()
+        m.name = "消息"
         array.append(m)
         self.v_array(vId: NAVARRAYID) { () -> Array<VueData>? in
             return array
@@ -43,11 +43,11 @@ class SVMessage:Vue,V_ViewControllerProtocol{
        POST().request(params: self.http) { (isK, data) in
                        
               
-         let titles = ["字体颜色note","背景图片note"]
+         let titles = ["粉丝","赞","@我的","评论","消息"]
          var array = [VueData]()
          for value in titles {
                     
-             let m = SetupCellModel()
+             let m = TodoCellModel()
              m.name = value
              array.append(m)
                     
@@ -62,8 +62,15 @@ class SVMessage:Vue,V_ViewControllerProtocol{
         
          self.v_index(vId: INDEXID) { (index) in
              
-             Router.push(SVMessageDetails(), nil, nil)
+            switch index{
+            case 0:Router.push(SVFans(),nil,nil)
+            case 1:Router.push(SVLike(),nil,nil)
+            case 2:Router.push(SVMention(),nil,nil)
+            case 3:Router.push(SVComment(),nil,nil)
+            case 4:Router.push(SVMessageDetails(),nil,nil)
 
+            default:Debug.log("o")
+            }
         }
         
     }

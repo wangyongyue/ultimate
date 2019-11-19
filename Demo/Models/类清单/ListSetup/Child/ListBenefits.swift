@@ -28,7 +28,7 @@ class ListBenefits:Vue,V_ViewControllerProtocol{
         
         var array = [VueData]()
         let m = NavBackCellModel()
-        m.name = "ListBenefits"
+        m.name = "邀请好友享福利"
         array.append(m)
         self.v_array(vId: NAVARRAYID) { () -> Array<VueData>? in
             return array

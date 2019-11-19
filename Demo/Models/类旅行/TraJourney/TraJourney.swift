@@ -30,8 +30,8 @@ class TraJourney:Vue,V_ViewControllerProtocol{
         
      
         var array = [VueData]()
-        let m = NavTitleCellModel()
-        m.name = "TraJourney"
+        let m = TraJourneyNavCellModel()
+        m.name = "旅拍"
         array.append(m)
         self.v_array(vId: NAVARRAYID) { () -> Array<VueData>? in
             return array

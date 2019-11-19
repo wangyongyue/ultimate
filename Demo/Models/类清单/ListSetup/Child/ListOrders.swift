@@ -28,7 +28,7 @@ class ListOrders:Vue,V_ViewControllerProtocol{
         
         var array = [VueData]()
         let m = NavBackCellModel()
-        m.name = "ListOrders"
+        m.name = "只能清单与标签"
         array.append(m)
         self.v_array(vId: NAVARRAYID) { () -> Array<VueData>? in
             return array

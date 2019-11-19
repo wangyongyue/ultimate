@@ -27,7 +27,7 @@ class TraBeCommented:Vue,V_ViewControllerProtocol{
         
         var array = [VueData]()
         let m = NavBackCellModel()
-        m.name = "TraBeCommented"
+        m.name = "待点评"
         array.append(m)
         self.v_array(vId: NAVARRAYID) { () -> Array<VueData>? in
             return array

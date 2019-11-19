@@ -7,9 +7,28 @@
 //
 
 import UIKit
+import VueSwift
 
 class TravelInstructions: Configuration {
 
+   
+    override init() {
+           super.init()
+           
+           Vue.register(aClass: TraHomeNavCellModel.classForCoder(), toClass: TraHomeNavCell.classForCoder())
+           Vue.register(aClass: TraTripNavCellModel.classForCoder(), toClass: TraTripNavCell.classForCoder())
+           Vue.register(aClass: TraJourneyNavCellModel.classForCoder(), toClass: TraJourneyNavCell.classForCoder())
+           Vue.register(aClass: TraServiceNavCellModel.classForCoder(), toClass: TraServiceNavCell.classForCoder())
+           Vue.register(aClass: TraMineNavCellModel.classForCoder(), toClass: TraMineNavCell.classForCoder())
+
+           Vue.register(aClass: TraHomeCellModel.classForCoder(), toClass: TraHomeCell.classForCoder())
+           Vue.register(aClass: TraTripCellModel.classForCoder(), toClass: TraTripCell.classForCoder())
+           Vue.register(aClass: TraJourneyCellModel.classForCoder(), toClass: TraJourneyCell.classForCoder())
+           Vue.register(aClass: TraServiceCellModel.classForCoder(), toClass: TraServiceCell.classForCoder())
+           Vue.register(aClass: TraMineCellModel.classForCoder(), toClass: TraMineCell.classForCoder())
+
+           
+       }
      override func getTabBar() -> UIViewController{
          
       let tab = BaseTabBarController()

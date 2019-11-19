@@ -27,7 +27,7 @@ class SMMyOrders:Vue,V_ViewControllerProtocol{
         
         var array = [VueData]()
         let m = NavBackCellModel()
-        m.name = "SMMyOrders"
+        m.name = "我的订单"
         array.append(m)
         self.v_array(vId: NAVARRAYID) { () -> Array<VueData>? in
             return array

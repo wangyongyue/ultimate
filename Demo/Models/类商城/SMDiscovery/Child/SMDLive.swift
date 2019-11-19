@@ -27,14 +27,11 @@ class SMDLive:Vue,GetViewProtocol{
         
        POST().request(params: self.http) { (isK, data) in
                        
+           
+        var array = [VueData]()
+        for i in 1...6 {
               
-         let titles = ["字体颜色note","背景图片note"]
-         var array = [VueData]()
-         for value in titles {
-                    
-             let m = SetupCellModel()
-             m.name = value
-             array.append(m)
+             array.append(SMDiscoveryCellModel())
                     
          }
          self.v_array(vId: ARRAYID) { () -> Array<VueData>? in

@@ -30,6 +30,10 @@ class NavBackCell: UITableViewCell {
     self.backgroundColor = UIColor.clear
     self.contentView.addSubview(headerLabel)
     self.contentView.addSubview(backImage)
+    
+    if Configuration.instructions.tabBarBackgroundColor() == UIColor.black{
+        backImage.image = UIImage.init(named: "back_w")
+    }
 
     headerLabel.snp.makeConstraints { (make) in
         

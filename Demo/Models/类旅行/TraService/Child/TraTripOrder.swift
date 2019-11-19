@@ -28,7 +28,7 @@ class TraTripOrder:Vue,V_ViewControllerProtocol{
         
         var array = [VueData]()
         let m = NavBackCellModel()
-        m.name = "TraTripOrder"
+        m.name = "订单咨询"
         array.append(m)
         self.v_array(vId: NAVARRAYID) { () -> Array<VueData>? in
             return array

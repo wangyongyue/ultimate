@@ -30,8 +30,8 @@ class SVHome:Vue,V_ViewControllerProtocol{
         
      
         var array = [VueData]()
-        let m = NavTitleCellModel()
-        m.name = "SVHome"
+        let m = SVHomeNavCellModel()
+        m.name = "首页"
         array.append(m)
         self.v_array(vId: NAVARRAYID) { () -> Array<VueData>? in
             return array

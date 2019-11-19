@@ -28,7 +28,7 @@ class TraTripGuide:Vue,V_ViewControllerProtocol{
         
         var array = [VueData]()
         let m = NavBackCellModel()
-        m.name = "TraTripGuide"
+        m.name = "旅行指南"
         array.append(m)
         self.v_array(vId: NAVARRAYID) { () -> Array<VueData>? in
             return array

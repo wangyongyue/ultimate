@@ -28,7 +28,7 @@ class SMBeReceived:Vue,V_ViewControllerProtocol{
         
         var array = [VueData]()
         let m = NavBackCellModel()
-        m.name = "SMBeReceived"
+        m.name = "待收货"
         array.append(m)
         self.v_array(vId: NAVARRAYID) { () -> Array<VueData>? in
             return array

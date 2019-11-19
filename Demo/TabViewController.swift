@@ -21,6 +21,16 @@ class TabViewController: UIViewController,UICollectionViewDelegate {
         
         self.view.backgroundColor = Configuration.instructions.backgroundColor()
         
+        
+        
+        let style = UIView()
+        style.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: 20)
+        style.alpha = 1
+        self.view.addSubview(style)
+        style.backgroundColor = Configuration.instructions.statusColor()
+        
+        
+        
         let navigation = CTable()
         self.view.addSubview(navigation)
         navigation.backgroundColor = Configuration.instructions.navigtaionBackgroundColor()
@@ -83,6 +93,19 @@ class TabViewController: UIViewController,UICollectionViewDelegate {
         }
         table.v_array(vId: ARRAYID, vue: m)
         table.delegate = self
+        
+        
+        m?.v_if(vId: STATUSID, v: { (isF) in
+            if isF{
+                
+                style.backgroundColor = Configuration.instructions.themeColor()
+                navigation.backgroundColor = Configuration.instructions.themeColor()
+
+            }
+        })
+        
+        
+        
         m?.v_start()
         
         self.view.addSubview(self.line)

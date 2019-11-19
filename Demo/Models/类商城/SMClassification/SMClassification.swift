@@ -29,8 +29,8 @@ class SMClassification:Vue,V_ViewControllerProtocol{
         
      
         var array = [VueData]()
-        let m = NavTitleCellModel()
-        m.name = "SMClassification"
+        let m = SMClassificationNavCellModel()
+        m.name = "分类"
         array.append(m)
         self.v_array(vId: NAVARRAYID) { () -> Array<VueData>? in
             return array

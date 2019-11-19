@@ -28,8 +28,8 @@ class VideoHot:Vue,V_ViewControllerProtocol{
         
      
         var array = [VueData]()
-        let m = NavTitleCellModel()
-        m.name = "VideoHot"
+        let m = VideoHotNavCellModel()
+        m.name = "热点"
         array.append(m)
         self.v_array(vId: NAVARRAYID) { () -> Array<VueData>? in
             return array

@@ -7,9 +7,31 @@
 //
 
 import UIKit
+import VueSwift
 
 class ShoppingMallInstructions: Configuration {
+    override init() {
+        
+     super.init()
+     
+     Vue.register(aClass: SMHomeNavCellModel.classForCoder(), toClass: SMHomeNavCell.classForCoder())
+     Vue.register(aClass: SMClassificationNavCellModel.classForCoder(), toClass: SMClassificationNavCell.classForCoder())
+     Vue.register(aClass: SMDiscoveryNavCellModel.classForCoder(), toClass: SMDiscoveryNavCell.classForCoder())
+     Vue.register(aClass: SMShopingCartNavCellModel.classForCoder(), toClass: SMShopingCartNavCell.classForCoder())
+     Vue.register(aClass: SMMineNavCellModel.classForCoder(), toClass: SMMineNavCell.classForCoder())
+     Vue.register(aClass: SMDetailsNavCellModel.classForCoder(), toClass: SMDetailsNavCell.classForCoder())
 
+
+     Vue.register(aClass: SMHomeCellModel.classForCoder(), toClass: SMHomeCell.classForCoder())
+     Vue.register(aClass: SMClassificationCellModel.classForCoder(), toClass: SMClassificationCell.classForCoder())
+     Vue.register(aClass: SMDiscoveryCellModel.classForCoder(), toClass: SMDiscoveryCell.classForCoder())
+     Vue.register(aClass: SMShopingCartCellModel.classForCoder(), toClass: SMShopingCartCell.classForCoder())
+     Vue.register(aClass: SMMineCellModel.classForCoder(), toClass: SMMineCell.classForCoder())
+     Vue.register(aClass: SMDetailsCellModel.classForCoder(), toClass: SMDetailsCell.classForCoder())
+
+        
+        
+    }
     override func getTabBar() -> UIViewController{
          
       let tab = BaseTabBarController()

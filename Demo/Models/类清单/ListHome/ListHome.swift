@@ -28,8 +28,8 @@ class ListHome:Vue,V_ViewControllerProtocol{
     private func dealNav(){
         
         var array = [VueData]()
-        let m = NavTitleCellModel()
-        m.name = "ListHome"
+        let m = ListHomeNavCellModel()
+        m.name = "首页"
         array.append(m)
         self.v_array(vId: NAVARRAYID) { () -> Array<VueData>? in
             return array
@@ -44,14 +44,11 @@ class ListHome:Vue,V_ViewControllerProtocol{
        POST().request(params: self.http) { (isK, data) in
                        
               
-         let titles = ["字体颜色note","背景图片note"]
          var array = [VueData]()
-         for value in titles {
-                    
-             let m = SetupCellModel()
-             m.name = value
-             array.append(m)
-                    
+         for i in 1...6 {
+             
+            array.append(ListHomeCellModel())
+
          }
          self.v_array(vId: ARRAYID) { () -> Array<VueData>? in
              return array
