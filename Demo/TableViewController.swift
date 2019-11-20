@@ -48,7 +48,7 @@ class TableViewController: UIViewController {
         }
         table.v_array(vId: ARRAYID, vue: m)
         table.v_index(vId: INDEXID, vue: m)
-        
+        table.v_if(vId: RELOADDataID, vue: m)
         navigation.v_array(vId: NAVARRAYID, vue: m)
         navigation.v_index(vId: NAVINDEXID, vue: m)
         
@@ -60,9 +60,17 @@ class TableViewController: UIViewController {
 
             }
         })
+        m?.v_if(vId: RELOADDataID, v: { (isF) in
+            if isF{
+                
+                table.reloadData()
+
+            }
+        })
         
         m?.v_start()
         
     }
+    
 
 }

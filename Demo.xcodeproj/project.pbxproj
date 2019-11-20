@@ -217,6 +217,32 @@
 		18B66B112383E7F800A3126F /* SMMineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B66B102383E7F800A3126F /* SMMineCell.swift */; };
 		18B66B132383F0BF00A3126F /* SMDetailsNavCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B66B122383F0BF00A3126F /* SMDetailsNavCell.swift */; };
 		18B66B152383F0D000A3126F /* SMDetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B66B142383F0D000A3126F /* SMDetailsCell.swift */; };
+		18B66B182384D96300A3126F /* KnowledgeProblem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B66B172384D96300A3126F /* KnowledgeProblem.swift */; };
+		18B66B1A2384D96D00A3126F /* KnowledgeProblemDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B66B192384D96D00A3126F /* KnowledgeProblemDetails.swift */; };
+		18B66B1D2384D9AF00A3126F /* KnowledgeProblemRecom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B66B1C2384D9AF00A3126F /* KnowledgeProblemRecom.swift */; };
+		18B66B1F2384D9BC00A3126F /* KnowledgePopularity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B66B1E2384D9BC00A3126F /* KnowledgePopularity.swift */; };
+		18B66B212384D9C600A3126F /* KnowledgeInvitation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B66B202384D9C600A3126F /* KnowledgeInvitation.swift */; };
+		18B66B232384DA9F00A3126F /* KnowledgeProblemNavCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B66B222384DA9F00A3126F /* KnowledgeProblemNavCell.swift */; };
+		18B66B252384DAB700A3126F /* KnowledgeProblemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B66B242384DAB700A3126F /* KnowledgeProblemCell.swift */; };
+		18B66B272384DCDC00A3126F /* konw_5@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18B66B262384DCDB00A3126F /* konw_5@3x.png */; };
+		18B66B322384E1CA00A3126F /* KnowledgeM1Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B66B312384E1CA00A3126F /* KnowledgeM1Cell.swift */; };
+		18B66B342384E1D800A3126F /* KnowledgeM2Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B66B332384E1D800A3126F /* KnowledgeM2Cell.swift */; };
+		18B66B362384E1E300A3126F /* KnowledgeM3Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B66B352384E1E300A3126F /* KnowledgeM3Cell.swift */; };
+		18B66B382384E5CC00A3126F /* KnowledgeM3CrossCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B66B372384E5CC00A3126F /* KnowledgeM3CrossCell.swift */; };
+		18B66B3A2384F08E00A3126F /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B66B392384F08E00A3126F /* HeaderCell.swift */; };
+		18B66B3C2384F0A800A3126F /* KnowledgeMineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B66B3B2384F0A800A3126F /* KnowledgeMineCell.swift */; };
+		18B66B3E2384F2DB00A3126F /* KnowledgeMineCrossCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B66B3D2384F2DB00A3126F /* KnowledgeMineCrossCell.swift */; };
+		18B66B432385118A00A3126F /* Forget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B66B402385118A00A3126F /* Forget.swift */; };
+		18B66B442385118A00A3126F /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B66B412385118A00A3126F /* Login.swift */; };
+		18B66B452385118A00A3126F /* Registered.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B66B422385118A00A3126F /* Registered.swift */; };
+		18B66B4E238511AE00A3126F /* LoginButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B66B47238511AD00A3126F /* LoginButtonCell.swift */; };
+		18B66B4F238511AE00A3126F /* LoginVCodeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B66B48238511AD00A3126F /* LoginVCodeCell.swift */; };
+		18B66B50238511AE00A3126F /* LoginPasswordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B66B49238511AD00A3126F /* LoginPasswordCell.swift */; };
+		18B66B51238511AE00A3126F /* LoginUsernameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B66B4A238511AD00A3126F /* LoginUsernameCell.swift */; };
+		18B66B52238511AE00A3126F /* LoginForgetButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B66B4B238511AD00A3126F /* LoginForgetButtonCell.swift */; };
+		18B66B53238511AE00A3126F /* LoginOtherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B66B4C238511AD00A3126F /* LoginOtherCell.swift */; };
+		18B66B54238511AE00A3126F /* LoginHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B66B4D238511AE00A3126F /* LoginHeaderCell.swift */; };
+		18B66B56238514D300A3126F /* LoginOutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B66B55238514D300A3126F /* LoginOutCell.swift */; };
 		18C5FE7C22CF4483003C7EEA /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C5FE7B22CF4483003C7EEA /* Configuration.swift */; };
 		18C6D986237C069B00BCF77E /* TraHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C6D985237C069B00BCF77E /* TraHome.swift */; };
 		18C6D988237C06A400BCF77E /* TraTrip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C6D987237C06A400BCF77E /* TraTrip.swift */; };
@@ -671,6 +697,32 @@
 		18B66B102383E7F800A3126F /* SMMineCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMMineCell.swift; sourceTree = "<group>"; };
 		18B66B122383F0BF00A3126F /* SMDetailsNavCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMDetailsNavCell.swift; sourceTree = "<group>"; };
 		18B66B142383F0D000A3126F /* SMDetailsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMDetailsCell.swift; sourceTree = "<group>"; };
+		18B66B172384D96300A3126F /* KnowledgeProblem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnowledgeProblem.swift; sourceTree = "<group>"; };
+		18B66B192384D96D00A3126F /* KnowledgeProblemDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnowledgeProblemDetails.swift; sourceTree = "<group>"; };
+		18B66B1C2384D9AF00A3126F /* KnowledgeProblemRecom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnowledgeProblemRecom.swift; sourceTree = "<group>"; };
+		18B66B1E2384D9BC00A3126F /* KnowledgePopularity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnowledgePopularity.swift; sourceTree = "<group>"; };
+		18B66B202384D9C600A3126F /* KnowledgeInvitation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnowledgeInvitation.swift; sourceTree = "<group>"; };
+		18B66B222384DA9F00A3126F /* KnowledgeProblemNavCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnowledgeProblemNavCell.swift; sourceTree = "<group>"; };
+		18B66B242384DAB700A3126F /* KnowledgeProblemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnowledgeProblemCell.swift; sourceTree = "<group>"; };
+		18B66B262384DCDB00A3126F /* konw_5@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "konw_5@3x.png"; sourceTree = "<group>"; };
+		18B66B312384E1CA00A3126F /* KnowledgeM1Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnowledgeM1Cell.swift; sourceTree = "<group>"; };
+		18B66B332384E1D800A3126F /* KnowledgeM2Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnowledgeM2Cell.swift; sourceTree = "<group>"; };
+		18B66B352384E1E300A3126F /* KnowledgeM3Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnowledgeM3Cell.swift; sourceTree = "<group>"; };
+		18B66B372384E5CC00A3126F /* KnowledgeM3CrossCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnowledgeM3CrossCell.swift; sourceTree = "<group>"; };
+		18B66B392384F08E00A3126F /* HeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
+		18B66B3B2384F0A800A3126F /* KnowledgeMineCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnowledgeMineCell.swift; sourceTree = "<group>"; };
+		18B66B3D2384F2DB00A3126F /* KnowledgeMineCrossCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnowledgeMineCrossCell.swift; sourceTree = "<group>"; };
+		18B66B402385118A00A3126F /* Forget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Forget.swift; sourceTree = "<group>"; };
+		18B66B412385118A00A3126F /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		18B66B422385118A00A3126F /* Registered.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Registered.swift; sourceTree = "<group>"; };
+		18B66B47238511AD00A3126F /* LoginButtonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginButtonCell.swift; sourceTree = "<group>"; };
+		18B66B48238511AD00A3126F /* LoginVCodeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVCodeCell.swift; sourceTree = "<group>"; };
+		18B66B49238511AD00A3126F /* LoginPasswordCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPasswordCell.swift; sourceTree = "<group>"; };
+		18B66B4A238511AD00A3126F /* LoginUsernameCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginUsernameCell.swift; sourceTree = "<group>"; };
+		18B66B4B238511AD00A3126F /* LoginForgetButtonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginForgetButtonCell.swift; sourceTree = "<group>"; };
+		18B66B4C238511AD00A3126F /* LoginOtherCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginOtherCell.swift; sourceTree = "<group>"; };
+		18B66B4D238511AE00A3126F /* LoginHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginHeaderCell.swift; sourceTree = "<group>"; };
+		18B66B55238514D300A3126F /* LoginOutCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginOutCell.swift; sourceTree = "<group>"; };
 		18C5FE7B22CF4483003C7EEA /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		18C6D985237C069B00BCF77E /* TraHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraHome.swift; sourceTree = "<group>"; };
 		18C6D987237C06A400BCF77E /* TraTrip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraTrip.swift; sourceTree = "<group>"; };
@@ -1060,6 +1112,7 @@
 		184FB61E237E460900410DF2 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				18B66B262384DCDB00A3126F /* konw_5@3x.png */,
 				184FB683237E9A4600410DF2 /* know_back.png */,
 				184FB67B237E8D4E00410DF2 /* know_tou@3x.png */,
 				184FB676237E872700410DF2 /* know_pinglun@3x.png */,
@@ -1160,11 +1213,11 @@
 			isa = PBXGroup;
 			children = (
 				45B04B59237EE95D002B650B /* NavigationCells */,
-				184FB66F237E807800410DF2 /* KnowledgeAttentionCell.swift */,
-				184FB671237E808B00410DF2 /* KnowledgeRecomCell.swift */,
-				184FB673237E809D00410DF2 /* KnowledgeHotCell.swift */,
-				184FB685237E9B2300410DF2 /* KnowledgeMembersCell.swift */,
-				184FB687237E9D9300410DF2 /* KnowledgeMessageCell.swift */,
+				18B66B2F2384E0A900A3126F /* KnowledgeHomeCell */,
+				18B66B2E2384E0A700A3126F /* KnowledgeMembersCell */,
+				18B66B2D2384E0A400A3126F /* KnowledgeProblemCell */,
+				18B66B302384E0D000A3126F /* KnowledgeMessageCell */,
+				18B66B2C2384E0A200A3126F /* KnowledgeMineCell */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -1185,6 +1238,7 @@
 				184FB61D237E45F700410DF2 /* KnowledgeTools */,
 				18C6D9D7237C0C1100BCF77E /* KnowledgeHome */,
 				18C6D9D6237C0C0F00BCF77E /* KnowledgeMembers */,
+				18B66B162384D92500A3126F /* KnowledgeProblem */,
 				18C6D9D5237C0C0D00BCF77E /* KnowledgeMessage */,
 				18C6D9D4237C0C0B00BCF77E /* KnowledgeMine */,
 			);
@@ -1583,6 +1637,7 @@
 				18A3E40A22FBC4F50010E560 /* home */,
 				18A3E40722FBBFA80010E560 /* setup */,
 				45985A7B22ED519E00FB19F4 /* tabCell */,
+				18B66B392384F08E00A3126F /* HeaderCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1590,6 +1645,7 @@
 		18911BEC22CB4509007618B0 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				18B66B3F2385118A00A3126F /* login */,
 				1884C727237BB6B400A05B9A /* 类笔记 */,
 				1884C726237BB6B100A05B9A /* 类短视频 */,
 				1884C725237BB6AE00A05B9A /* 类分享 */,
@@ -1762,6 +1818,99 @@
 				18B66B122383F0BF00A3126F /* SMDetailsNavCell.swift */,
 			);
 			path = NavigationCells;
+			sourceTree = "<group>";
+		};
+		18B66B162384D92500A3126F /* KnowledgeProblem */ = {
+			isa = PBXGroup;
+			children = (
+				18B66B172384D96300A3126F /* KnowledgeProblem.swift */,
+				18B66B192384D96D00A3126F /* KnowledgeProblemDetails.swift */,
+				18B66B1B2384D97100A3126F /* Child */,
+			);
+			path = KnowledgeProblem;
+			sourceTree = "<group>";
+		};
+		18B66B1B2384D97100A3126F /* Child */ = {
+			isa = PBXGroup;
+			children = (
+				18B66B1C2384D9AF00A3126F /* KnowledgeProblemRecom.swift */,
+				18B66B1E2384D9BC00A3126F /* KnowledgePopularity.swift */,
+				18B66B202384D9C600A3126F /* KnowledgeInvitation.swift */,
+			);
+			path = Child;
+			sourceTree = "<group>";
+		};
+		18B66B2C2384E0A200A3126F /* KnowledgeMineCell */ = {
+			isa = PBXGroup;
+			children = (
+				18B66B3B2384F0A800A3126F /* KnowledgeMineCell.swift */,
+				18B66B3D2384F2DB00A3126F /* KnowledgeMineCrossCell.swift */,
+			);
+			name = KnowledgeMineCell;
+			sourceTree = "<group>";
+		};
+		18B66B2D2384E0A400A3126F /* KnowledgeProblemCell */ = {
+			isa = PBXGroup;
+			children = (
+				18B66B242384DAB700A3126F /* KnowledgeProblemCell.swift */,
+			);
+			path = KnowledgeProblemCell;
+			sourceTree = "<group>";
+		};
+		18B66B2E2384E0A700A3126F /* KnowledgeMembersCell */ = {
+			isa = PBXGroup;
+			children = (
+				184FB685237E9B2300410DF2 /* KnowledgeMembersCell.swift */,
+				18B66B312384E1CA00A3126F /* KnowledgeM1Cell.swift */,
+				18B66B332384E1D800A3126F /* KnowledgeM2Cell.swift */,
+				18B66B352384E1E300A3126F /* KnowledgeM3Cell.swift */,
+				18B66B372384E5CC00A3126F /* KnowledgeM3CrossCell.swift */,
+			);
+			path = KnowledgeMembersCell;
+			sourceTree = "<group>";
+		};
+		18B66B2F2384E0A900A3126F /* KnowledgeHomeCell */ = {
+			isa = PBXGroup;
+			children = (
+				184FB66F237E807800410DF2 /* KnowledgeAttentionCell.swift */,
+				184FB671237E808B00410DF2 /* KnowledgeRecomCell.swift */,
+				184FB673237E809D00410DF2 /* KnowledgeHotCell.swift */,
+			);
+			path = KnowledgeHomeCell;
+			sourceTree = "<group>";
+		};
+		18B66B302384E0D000A3126F /* KnowledgeMessageCell */ = {
+			isa = PBXGroup;
+			children = (
+				184FB687237E9D9300410DF2 /* KnowledgeMessageCell.swift */,
+			);
+			name = KnowledgeMessageCell;
+			sourceTree = "<group>";
+		};
+		18B66B3F2385118A00A3126F /* login */ = {
+			isa = PBXGroup;
+			children = (
+				18B66B462385119100A3126F /* cells */,
+				18B66B402385118A00A3126F /* Forget.swift */,
+				18B66B412385118A00A3126F /* Login.swift */,
+				18B66B422385118A00A3126F /* Registered.swift */,
+			);
+			path = login;
+			sourceTree = "<group>";
+		};
+		18B66B462385119100A3126F /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				18B66B47238511AD00A3126F /* LoginButtonCell.swift */,
+				18B66B4B238511AD00A3126F /* LoginForgetButtonCell.swift */,
+				18B66B4D238511AE00A3126F /* LoginHeaderCell.swift */,
+				18B66B4C238511AD00A3126F /* LoginOtherCell.swift */,
+				18B66B49238511AD00A3126F /* LoginPasswordCell.swift */,
+				18B66B4A238511AD00A3126F /* LoginUsernameCell.swift */,
+				18B66B48238511AD00A3126F /* LoginVCodeCell.swift */,
+				18B66B55238514D300A3126F /* LoginOutCell.swift */,
+			);
+			path = cells;
 			sourceTree = "<group>";
 		};
 		18C5FE7A22CF4414003C7EEA /* Configuration */ = {
@@ -2508,6 +2657,7 @@
 			children = (
 				45B04B5A237EE991002B650B /* KnowledgeHomeNavCell.swift */,
 				45B04B5C237EE9A0002B650B /* KnowledgeMembersNavCell.swift */,
+				18B66B222384DA9F00A3126F /* KnowledgeProblemNavCell.swift */,
 				45B04B5E237EE9AC002B650B /* KnowledgeMessageNavCell.swift */,
 				45B04B60237EE9F0002B650B /* KnowledgeMineNavCell.swift */,
 			);
@@ -2741,6 +2891,7 @@
 				184FB679237E872700410DF2 /* know_pinglun@3x.png in Resources */,
 				184FB656237E576400410DF2 /* music_1@3x.png in Resources */,
 				45B04B0B237DA0D3002B650B /* Video_5@3x.png in Resources */,
+				18B66B272384DCDC00A3126F /* konw_5@3x.png in Resources */,
 				184FB625237E4FD600410DF2 /* konw_4@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2865,12 +3016,14 @@
 				45B04B1B237DA22D002B650B /* Video70.swift in Sources */,
 				45B04B67237F9D39002B650B /* MusicRecommendNavCell.swift in Sources */,
 				184FB5C6237D5AB200410DF2 /* ListTasks.swift in Sources */,
+				18B66B1F2384D9BC00A3126F /* KnowledgePopularity.swift in Sources */,
 				45B04B26237DA2DB002B650B /* VideoHotFollow.swift in Sources */,
 				184FB600237E3F8F00410DF2 /* NewsSports.swift in Sources */,
 				18C6D9D3237C0B5300BCF77E /* MusicMine.swift in Sources */,
 				1884C73B237BD0B300A05B9A /* ListInstructions.swift in Sources */,
 				45B04B61237EE9F0002B650B /* KnowledgeMineNavCell.swift in Sources */,
 				1884C76D237BF43000A05B9A /* ShareHome.swift in Sources */,
+				18B66B1A2384D96D00A3126F /* KnowledgeProblemDetails.swift in Sources */,
 				45B04AD1237D9102002B650B /* SMFashion.swift in Sources */,
 				184FB634237E511100410DF2 /* KnowAttention.swift in Sources */,
 				1884C759237BF0A000A05B9A /* NotesQuick.swift in Sources */,
@@ -2888,9 +3041,11 @@
 				18C6DA51237D41C400BCF77E /* ShareSocialUpdates.swift in Sources */,
 				18C6DA24237D267C00BCF77E /* SVComment.swift in Sources */,
 				18C6D9ED237CEADD00BCF77E /* NotesAssistantDetails.swift in Sources */,
+				18B66B442385118A00A3126F /* Login.swift in Sources */,
 				18C6D9F7237CEBE000BCF77E /* NotesEvents.swift in Sources */,
 				45B04B24237DA2CE002B650B /* VideoHotRecom.swift in Sources */,
 				18C6DA41237D413A00BCF77E /* ShareChat.swift in Sources */,
+				18B66B432385118A00A3126F /* Forget.swift in Sources */,
 				184FB5F6237E3F3600410DF2 /* NewsVideos.swift in Sources */,
 				45B04B5D237EE9A0002B650B /* KnowledgeMembersNavCell.swift in Sources */,
 				45B04B34237DA3AC002B650B /* VideoSquare.swift in Sources */,
@@ -2900,8 +3055,11 @@
 				18B66ADD2383D2B600A3126F /* TraMineNavCell.swift in Sources */,
 				45B04B85237FD6F4002B650B /* NewMineCell.swift in Sources */,
 				1884C757237BF09900A05B9A /* NotesAssistant.swift in Sources */,
+				18B66B232384DA9F00A3126F /* KnowledgeProblemNavCell.swift in Sources */,
 				184FB66C237E741B00410DF2 /* MusicPurchased.swift in Sources */,
+				18B66B4E238511AE00A3126F /* LoginButtonCell.swift in Sources */,
 				18C6DA62237D458700BCF77E /* ShareFoundDetails.swift in Sources */,
+				18B66B322384E1CA00A3126F /* KnowledgeM1Cell.swift in Sources */,
 				45B04B43237DA455002B650B /* VideoCreation.swift in Sources */,
 				18C6D995237C076C00BCF77E /* ListHome.swift in Sources */,
 				1886DE9D238389EB00EA3057 /* VideoDubblesNavCell.swift in Sources */,
@@ -2925,6 +3083,7 @@
 				18B66AD72383D28E00A3126F /* TraTripNavCell.swift in Sources */,
 				45B04AF3237D93D8002B650B /* SMD5g.swift in Sources */,
 				184FB618237E41AE00410DF2 /* NewsHotList.swift in Sources */,
+				18B66B3E2384F2DB00A3126F /* KnowledgeMineCrossCell.swift in Sources */,
 				1884C741237BD0D100A05B9A /* NewsInstructions.swift in Sources */,
 				45B04B73237F9D87002B650B /* MusicMineCell.swift in Sources */,
 				18C6D9DD237C0CD500BCF77E /* KnowledgeMessage.swift in Sources */,
@@ -2933,6 +3092,7 @@
 				184FB686237E9B2300410DF2 /* KnowledgeMembersCell.swift in Sources */,
 				18B66AF52383DE2D00A3126F /* ListCalenderCell.swift in Sources */,
 				18C6DA5A237D445600BCF77E /* ShareUnpacking.swift in Sources */,
+				18B66B53238511AE00A3126F /* LoginOtherCell.swift in Sources */,
 				45B04ADD237D927C002B650B /* SMShopDetails.swift in Sources */,
 				184FB642237E52F300410DF2 /* KnowledgeMagazine.swift in Sources */,
 				1884C739237BD0A900A05B9A /* TravelInstructions.swift in Sources */,
@@ -2956,6 +3116,7 @@
 				1884C76F237BF43900A05B9A /* ShareFound.swift in Sources */,
 				45B04AEF237D93B6002B650B /* SMDSun.swift in Sources */,
 				18C6DA1B237D25AB00BCF77E /* SVVideo.swift in Sources */,
+				18B66B51238511AE00A3126F /* LoginUsernameCell.swift in Sources */,
 				18B66B012383E77E00A3126F /* SMClassificationNavCell.swift in Sources */,
 				45B04AE4237D931F002B650B /* SMClassSupermarket.swift in Sources */,
 				18C6DA7E237D496000BCF77E /* TraTripDestination.swift in Sources */,
@@ -2964,6 +3125,7 @@
 				184FB606237E3FB800410DF2 /* NewsGames.swift in Sources */,
 				45B04B10237DA160002B650B /* VideoHomeDetails.swift in Sources */,
 				18C6DA56237D444200BCF77E /* ShareHot.swift in Sources */,
+				18B66B4F238511AE00A3126F /* LoginVCodeCell.swift in Sources */,
 				1886DEB7238398DE00EA3057 /* NotesAssistantCell.swift in Sources */,
 				18B66ABB2383C30400A3126F /* SVCityCell.swift in Sources */,
 				18C6DA4F237D41B600BCF77E /* ShareFriends.swift in Sources */,
@@ -2999,6 +3161,8 @@
 				45B04AFE237D94CC002B650B /* SMBeEvaluated.swift in Sources */,
 				18C5FE7C22CF4483003C7EEA /* Configuration.swift in Sources */,
 				184FB5D0237D5AF000410DF2 /* ListHelp.swift in Sources */,
+				18B66B1D2384D9AF00A3126F /* KnowledgeProblemRecom.swift in Sources */,
+				18B66B342384E1D800A3126F /* KnowledgeM2Cell.swift in Sources */,
 				18C6DA85237D49D100BCF77E /* TraAllOrders.swift in Sources */,
 				18B66B112383E7F800A3126F /* SMMineCell.swift in Sources */,
 				45B04B19237DA224002B650B /* VideoHotting.swift in Sources */,
@@ -3009,7 +3173,10 @@
 				1884C71C237BB55A00A05B9A /* Adapter.swift in Sources */,
 				184FB64A237E538800410DF2 /* KnowledgeRecom.swift in Sources */,
 				18911C0122CB4DC6007618B0 /* Home.swift in Sources */,
+				18B66B212384D9C600A3126F /* KnowledgeInvitation.swift in Sources */,
+				18B66B182384D96300A3126F /* KnowledgeProblem.swift in Sources */,
 				184FB5C2237D5A9300410DF2 /* ListSounds.swift in Sources */,
+				18B66B382384E5CC00A3126F /* KnowledgeM3CrossCell.swift in Sources */,
 				45B04B7F237FD6C6002B650B /* NewsHomeCell.swift in Sources */,
 				18C6D9C3237C0A9300BCF77E /* NewsVideo.swift in Sources */,
 				45B04ADF237D9296002B650B /* SMRecommendations.swift in Sources */,
@@ -3033,6 +3200,7 @@
 				184FB604237E3FAF00410DF2 /* NewsNBA.swift in Sources */,
 				18C6D9A5237C087300BCF77E /* SMClassification.swift in Sources */,
 				184FB59B237D561400410DF2 /* TraAttention.swift in Sources */,
+				18B66B56238514D300A3126F /* LoginOutCell.swift in Sources */,
 				1884C74E237BE05F00A05B9A /* Notes.swift in Sources */,
 				18B66AF72383DE3E00A3126F /* ListClockCell.swift in Sources */,
 				18C6DA2D237D272600BCF77E /* SVCollections.swift in Sources */,
@@ -3051,6 +3219,7 @@
 				18C6DA89237D49F000BCF77E /* TraNoTrip.swift in Sources */,
 				184FB638237E512B00410DF2 /* KnowRecent.swift in Sources */,
 				184FB5C4237D5AAA00410DF2 /* ListOrders.swift in Sources */,
+				18B66B252384DAB700A3126F /* KnowledgeProblemCell.swift in Sources */,
 				45B04AD7237D9132002B650B /* SMLife.swift in Sources */,
 				45B04B2F237DA368002B650B /* VideoFun.swift in Sources */,
 				1886DEAD2383989500EA3057 /* NotesNavCell.swift in Sources */,
@@ -3067,6 +3236,7 @@
 				18B66ABF2383C31A00A3126F /* SVMineCell.swift in Sources */,
 				18C6DA2F237D273600BCF77E /* SVLikes.swift in Sources */,
 				18C6D98E237C06BD00BCF77E /* TraMine.swift in Sources */,
+				18B66B362384E1E300A3126F /* KnowledgeM3Cell.swift in Sources */,
 				18B66AEF2383DDF800A3126F /* ListClockNavCell.swift in Sources */,
 				184FB644237E52FB00410DF2 /* KnowledgeColumn.swift in Sources */,
 				45B04AF1237D93C6002B650B /* SMDRecommendation.swift in Sources */,
@@ -3092,6 +3262,7 @@
 				45B04ACB237D90E0002B650B /* SMSelection.swift in Sources */,
 				18C6DA65237D45D300BCF77E /* ShareGoodDetails.swift in Sources */,
 				45B04ADB237D926E002B650B /* SMReviews.swift in Sources */,
+				18B66B452385118A00A3126F /* Registered.swift in Sources */,
 				18911BF522CB4992007618B0 /* Image.swift in Sources */,
 				18C6D9F9237CEBF800BCF77E /* NotesBook.swift in Sources */,
 				184FB646237E530300410DF2 /* KnowledgeLive.swift in Sources */,
@@ -3099,6 +3270,7 @@
 				18C6DA73237D46CE00BCF77E /* ShareBackpack.swift in Sources */,
 				184FB62B237E505F00410DF2 /* KnowledgeMembersDetails.swift in Sources */,
 				45B04B02237D94E5002B650B /* SMMyOrders.swift in Sources */,
+				18B66B3A2384F08E00A3126F /* HeaderCell.swift in Sources */,
 				18C6D9D9237C0C5100BCF77E /* KnowledgeHome.swift in Sources */,
 				18C6D9B7237C0A2C00BCF77E /* VideoMembers.swift in Sources */,
 				1886DEA323838A2700EA3057 /* VideoHotCell.swift in Sources */,
@@ -3154,6 +3326,7 @@
 				184FB5D2237D5AFF00410DF2 /* ListFeedback.swift in Sources */,
 				18B66AB52383C2E500A3126F /* SVMessageNavCell.swift in Sources */,
 				18C6D99B237C078300BCF77E /* ListSetup.swift in Sources */,
+				18B66B3C2384F0A800A3126F /* KnowledgeMineCell.swift in Sources */,
 				45B04B17237DA219002B650B /* VideoLingjian.swift in Sources */,
 				184FB61A237E41B800410DF2 /* NewsHotTopic.swift in Sources */,
 				18B66AC32383CD9200A3126F /* ShareHomeNavCell.swift in Sources */,
@@ -3163,11 +3336,13 @@
 				18C6D9B3237C0A1A00BCF77E /* VideoHome.swift in Sources */,
 				45B04B3D237DA428002B650B /* VideoHistory.swift in Sources */,
 				184FB65A237E72D300410DF2 /* MusicHomeDetails.swift in Sources */,
+				18B66B54238511AE00A3126F /* LoginHeaderCell.swift in Sources */,
 				18C6DA7A237D492200BCF77E /* TraTripOrder.swift in Sources */,
 				18C6DA26237D268C00BCF77E /* SVMessageDetails.swift in Sources */,
 				18B66AD12383CE0400A3126F /* ShareMineCell.swift in Sources */,
 				45B04B2D237DA35B002B650B /* VideoSports.swift in Sources */,
 				45B04B6B237F9D50002B650B /* MusicMineNavCell.swift in Sources */,
+				18B66B50238511AE00A3126F /* LoginPasswordCell.swift in Sources */,
 				18C6DA1E237D261C00BCF77E /* SVFans.swift in Sources */,
 				184FB664237E738700410DF2 /* MusicAttention.swift in Sources */,
 				184FB636237E511E00410DF2 /* KnowFavorites.swift in Sources */,
@@ -3204,6 +3379,7 @@
 				184FB5CC237D5ADA00410DF2 /* ListPublicNumber.swift in Sources */,
 				45B04B81237FD6DA002B650B /* NewsVideoCell.swift in Sources */,
 				18B66B052383E79B00A3126F /* SMShopingCartNavCell.swift in Sources */,
+				18B66B52238511AE00A3126F /* LoginForgetButtonCell.swift in Sources */,
 				18B66AE12383D2CF00A3126F /* TraTripCell.swift in Sources */,
 				184FB63E237E52E100410DF2 /* KnowledgeMemberRecom.swift in Sources */,
 				184FB612237E40E700410DF2 /* NewsVideoGame.swift in Sources */,

@@ -19,12 +19,23 @@ class KnowledgeInstructions: Configuration {
         Vue.register(aClass: KnowledgeHotCellModel.classForCoder(), toClass: KnowledgeHotCell.classForCoder())
         Vue.register(aClass: KnowledgeMembersCellModel.classForCoder(), toClass: KnowledgeMembersCell.classForCoder())
         Vue.register(aClass: KnowledgeMessageCellModel.classForCoder(), toClass: KnowledgeMessageCell.classForCoder())
+        Vue.register(aClass: KnowledgeProblemCellModel.classForCoder(), toClass: KnowledgeProblemCell.classForCoder())
 
         
         Vue.register(aClass: KnowledgeHomeNavCellModel.classForCoder(), toClass: KnowledgeHomeNavCell.classForCoder())
         Vue.register(aClass: KnowledgeMembersNavCellModel.classForCoder(), toClass: KnowledgeMembersNavCell.classForCoder())
         Vue.register(aClass: KnowledgeMessageNavCellModel.classForCoder(), toClass: KnowledgeMessageNavCell.classForCoder())
         Vue.register(aClass: KnowledgeMineNavCellModel.classForCoder(), toClass: KnowledgeMineNavCell.classForCoder())
+        Vue.register(aClass: KnowledgeProblemNavCellModel.classForCoder(), toClass: KnowledgeProblemNavCell.classForCoder())
+
+        
+        Vue.register(aClass: KnowledgeM1CellModel.classForCoder(), toClass: KnowledgeM1Cell.classForCoder())
+        Vue.register(aClass: KnowledgeM2CellModel.classForCoder(), toClass: KnowledgeM2Cell.classForCoder())
+        Vue.register(aClass: KnowledgeM3CellModel.classForCoder(), toClass: KnowledgeM3Cell.classForCoder())
+        Vue.register(aClass: KnowledgeM3CrossCellModel.classForCoder(), toClass: KnowledgeM3CrossCell.classForCoder())
+
+        Vue.register(aClass: KnowledgeMineCellModel.classForCoder(), toClass: KnowledgeMineCell.classForCoder())
+        Vue.register(aClass: KnowledgeMineCrossCellModel.classForCoder(), toClass: KnowledgeMineCrossCell.classForCoder())
 
         
         
@@ -35,6 +46,9 @@ class KnowledgeInstructions: Configuration {
          let tab = BaseTabBarController()
         tab.addChildVC(childVC: KnowledgeHome().v_viewController(), childTitle: "首页", image: UIImage.init(named: "konw_1"), selectedImage:UIImage.init(named: "konw_1"))
          tab.addChildVC(childVC: KnowledgeMembers().v_viewController(), childTitle: "会员", image: UIImage.init(named: "konw_2"), selectedImage: UIImage.init(named: "konw_2"))
+        tab.addChildVC(childVC: KnowledgeProblem().v_viewController(), childTitle: "回答", image: UIImage.init(named: "konw_5"), selectedImage: UIImage.init(named: "konw_5"))
+
+        
          tab.addChildVC(childVC: KnowledgeMessage().v_viewController(), childTitle: "消息", image: UIImage.init(named: "konw_3"), selectedImage: UIImage.init(named: "konw_3"))
          tab.addChildVC(childVC: KnowledgeMine().v_viewController(), childTitle: "我的", image: UIImage.init(named: "konw_4"), selectedImage: UIImage.init(named: "konw_4"))
 
