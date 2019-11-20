@@ -23,6 +23,7 @@ protocol GetViewProtocol {
 
 //VUE_ID
 let STATUSID = "StatusID"
+let RELOADDataID = "ReloadDataID"
 
 let NAVARRAYID = "NavArrayID"
 let NAVINDEXID = "NavIndexID"

@@ -1,15 +1,16 @@
 //
-//  KnowledgeMine.swift
+//  KnowledgeProblemDetails.swift
 //  Demo
 //
-//  Created by apple on 2019/11/13.
+//  Created by apple on 2019/11/20.
 //  Copyright © 2019 test. All rights reserved.
 //
+
 
 import UIKit
 
 import VueSwift
-class KnowledgeMine:Vue,V_ViewControllerProtocol{
+class KnowledgeProblemDetails:Vue,V_ViewControllerProtocol{
     private var http = DefaultHttp()
     
     func v_viewController() -> UIViewController{
@@ -19,24 +20,16 @@ class KnowledgeMine:Vue,V_ViewControllerProtocol{
     }
     
     override func v_start() {
-        dealStatus()
+                
         dealNav()
         dealContent()
       
     }
-    private func dealStatus(){
-        
-        self.v_if(vId: STATUSID) { () -> Bool? in
-            
-            return true
-        }
-        
-    }
     private func dealNav(){
         
         var array = [VueData]()
-        let m = KnowledgeMineNavCellModel()
-        m.name = "我的"
+        let m = NavBackCellModel()
+        m.name = "详情"
         array.append(m)
         self.v_array(vId: NAVARRAYID) { () -> Array<VueData>? in
             return array
@@ -47,14 +40,19 @@ class KnowledgeMine:Vue,V_ViewControllerProtocol{
         
     }
     private func dealContent(){
-        var array = [VueData]()
-
+        
        POST().request(params: self.http) { (isK, data) in
                        
-        
-         array.append(HeaderCellModel())
-         array.append(KnowledgeMineCellModel())
-         array.append(LoginOutCellModel())
+              
+         let titles = ["沙发斯蒂芬是发顺丰独立思考"]
+         var array = [VueData]()
+         for value in titles {
+                    
+             let m = SetupCellModel()
+             m.name = value
+             array.append(m)
+                    
+         }
          self.v_array(vId: ARRAYID) { () -> Array<VueData>? in
              return array
                     
@@ -64,20 +62,8 @@ class KnowledgeMine:Vue,V_ViewControllerProtocol{
         }
         
          self.v_index(vId: INDEXID) { (index) in
+             
             
-            if index == 0{return}
-            let data = array[index] as! VueData
-            let number = data.v_identifier
-            
-             switch number{
-                case 0:Router.push(KnowCreation(),nil,nil)
-                case 1:Router.push(KnowAttention(),nil,nil)
-                case 2:Router.push(KnowFavorites(),nil,nil)
-                case 3:Router.push(KnowRecent(),nil,nil)
-                default:Debug.log("o")
-             }
-                        
-           
         }
         
     }

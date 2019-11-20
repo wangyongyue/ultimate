@@ -61,4 +61,14 @@ extension UIViewController{
 
     
     }
+    
+    static func toLogin(){
+            let app = UIApplication.shared.delegate as! AppDelegate
+            let tab = BaseNavigationController.init(rootViewController: Login().v_viewController())
+            app.window?.rootViewController = tab;
+            app.window?.makeKeyAndVisible();
+            
+
+        
+        }
 }

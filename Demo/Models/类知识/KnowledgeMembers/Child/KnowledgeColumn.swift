@@ -28,12 +28,12 @@ class KnowledgeColumn:Vue,GetViewProtocol{
                        
               
          var array = [VueData]()
-         array.append(KnowledgeMembersCellModel())
-         array.append(KnowledgeMembersCellModel())
-         array.append(KnowledgeMembersCellModel())
-         array.append(KnowledgeMembersCellModel())
-         array.append(KnowledgeMembersCellModel())
-         array.append(KnowledgeMembersCellModel())
+         array.append(KnowledgeM1CellModel())
+         array.append(KnowledgeM2CellModel())
+         array.append(KnowledgeM3CellModel())
+         array.append(KnowledgeM1CellModel())
+         array.append(KnowledgeM1CellModel())
+         array.append(KnowledgeM1CellModel())
          self.v_array(vId: ARRAYID) { () -> Array<VueData>? in
              return array
                     

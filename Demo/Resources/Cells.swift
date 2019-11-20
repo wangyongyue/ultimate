@@ -22,6 +22,17 @@ class Cells: NSObject {
 
         Vue.register(aClass: TabHeaderLineCellModel.classForCoder(), toClass: TabHeaderLineCell.classForCoder())
         Vue.register(aClass: TodoCellModel.classForCoder(), toClass: TodoCell.classForCoder())
+        Vue.register(aClass: HeaderCellModel.classForCoder(), toClass: HeaderCell.classForCoder())
+
+        Vue.register(aClass: LoginHeaderCellModel.classForCoder(), toClass: LoginHeaderCell.classForCoder())
+        Vue.register(aClass: LoginUsernameCellModel.classForCoder(), toClass: LoginUsernameCell.classForCoder())
+        Vue.register(aClass: LoginPasswordCellModel.classForCoder(), toClass: LoginPasswordCell.classForCoder())
+        Vue.register(aClass: LoginForgetButtonCellModel.classForCoder(), toClass: LoginForgetButtonCell.classForCoder())
+        Vue.register(aClass: LoginButtonCellModel.classForCoder(), toClass: LoginButtonCell.classForCoder())
+       
+        Vue.register(aClass: LoginOtherCellModel.classForCoder(), toClass: LoginOtherCell.classForCoder())
+        Vue.register(aClass: LoginVCodeCellModel.classForCoder(), toClass: LoginVCodeCell.classForCoder())
+        Vue.register(aClass: LoginOutCellModel.classForCoder(), toClass: LoginOutCell.classForCoder())
 
 
     }

@@ -7,7 +7,6 @@
 //
 
 import UIKit
-
 import VueSwift
 class KnowledgeMembersCell: UITableViewCell {
     
@@ -15,7 +14,7 @@ class KnowledgeMembersCell: UITableViewCell {
         let a = UIImageView()
         a.layer.cornerRadius = 6
         a.layer.masksToBounds = true
-        a.image = UIImage.init(named: "know_back")
+        a.image = UIImage.init(named: "feng_1")
         return a
     }()
     
@@ -81,21 +80,21 @@ class KnowledgeMembersCell: UITableViewCell {
             
             make.top.equalTo(10)
             make.right.equalTo(-12)
-            make.left.equalTo(self.headImage.snp_rightMargin).offset(10)
+            make.left.equalTo(self.headImage.snp_rightMargin).offset(15)
             
         }
         self.conetentLabel.snp.makeConstraints { (make) in
             
             make.top.equalTo(self.headerLabel.snp_bottomMargin).offset(10)
             make.right.equalTo(-12)
-            make.left.equalTo(self.headImage.snp_rightMargin).offset(10)
+            make.left.equalTo(self.headImage.snp_rightMargin).offset(15)
             
         }
         self.timeLabel.snp.makeConstraints { (make) in
             
             make.bottom.equalTo(self.headImage)
             make.right.equalTo(-12)
-            make.left.equalTo(self.headImage.snp_rightMargin).offset(10)
+            make.left.equalTo(self.headImage.snp_rightMargin).offset(15)
             
         }
         
