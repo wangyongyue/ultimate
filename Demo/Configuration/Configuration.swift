@@ -18,7 +18,7 @@ let  themeColor = UIColor.init(red: 9/255.0, green: 169/255.0, blue: 159/255.0, 
 let  bgColor = UIColor.init(red: 230/255.0, green: 230/255.0, blue: 230/255.0, alpha: 1.0)
 
 class Configuration{
-    static let instructions = ShoppingMallInstructions()
+    static let instructions = KnowledgeInstructions()
     
     func getTabBar() -> UIViewController{
         let tab = BaseTabBarController()
