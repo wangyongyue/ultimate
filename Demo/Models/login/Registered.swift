@@ -40,35 +40,30 @@ class Registered:Vue,V_ViewControllerProtocol{
     }
     private func dealContent(){
         
-       POST().request(params: self.http) { (isK, data) in
-                       
-              
-         let username = LoginUsernameCellModel()
-          username.name = "用户名"
-          username.placeholder = "请输入用户名"
-         
-          let vcode = LoginVCodeCellModel()
+       let username = LoginUsernameCellModel()
+        username.name = "用户名"
+        username.placeholder = "请输入用户名"
+       
+        let vcode = LoginVCodeCellModel()
 
-          let paseword = LoginPasswordCellModel()
-          paseword.name = "密码"
-          paseword.placeholder = "请输入密码"
+        let paseword = LoginPasswordCellModel()
+        paseword.name = "密码"
+        paseword.placeholder = "请输入密码"
 
-          let login = LoginButtonCellModel()
-          login.name = "注册"
-         
-          
-          self.array.append(username)
-          self.array.append(vcode)
-          self.array.append(paseword)
-          self.array.append(login)
-          self.v_array(vId: ARRAYID) { () -> Array<VueData>? in
-              
-              return self.array
-              
-          }
-                
-                  
+        let login = LoginButtonCellModel()
+        login.name = "注册"
+       
+        
+        self.array.append(username)
+        self.array.append(vcode)
+        self.array.append(paseword)
+        self.array.append(login)
+        self.v_array(vId: ARRAYID) { () -> Array<VueData>? in
+            
+            return self.array
+            
         }
+             
         
          self.v_index(vId: INDEXID) { (index) in
             if index == 1{

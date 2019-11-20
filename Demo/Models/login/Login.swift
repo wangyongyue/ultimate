@@ -41,48 +41,42 @@ class Login:Vue,V_ViewControllerProtocol{
     }
     private func dealContent(){
         
-       POST().request(params: self.http) { (isK, data) in
-                       
-              
-         let header = LoginHeaderCellModel()
-         
-         let username = LoginUsernameCellModel()
-         username.name = "用户名"
-         username.placeholder = "请输入用户名"
-         
-         let paseword = LoginPasswordCellModel()
-         paseword.name = "密码"
-         paseword.placeholder = "请输入密码"
+       let header = LoginHeaderCellModel()
+       
+       let username = LoginUsernameCellModel()
+       username.name = "用户名"
+       username.placeholder = "请输入用户名"
+       
+       let paseword = LoginPasswordCellModel()
+       paseword.name = "密码"
+       paseword.placeholder = "请输入密码"
 
-         let forgetPW = LoginForgetButtonCellModel()
-         forgetPW.name = "忘记密码"
-         
-         let login = LoginButtonCellModel()
-         login.name = "登录"
-         
-         let register = LoginButtonCellModel()
-         register.name = "注册"
-         
-         let other = LoginOtherCellModel()
-         other.name = "第三方登录"
-         
-         
-         self.array.append(header)
-         self.array.append(username)
-         self.array.append(paseword)
-         self.array.append(forgetPW)
-         self.array.append(login)
-         self.array.append(register)
-         self.array.append(other)
+       let forgetPW = LoginForgetButtonCellModel()
+       forgetPW.name = "忘记密码"
+       
+       let login = LoginButtonCellModel()
+       login.name = "登录"
+       
+       let register = LoginButtonCellModel()
+       register.name = "注册"
+       
+       let other = LoginOtherCellModel()
+       other.name = "第三方登录"
+       
+       
+       self.array.append(header)
+       self.array.append(username)
+       self.array.append(paseword)
+       self.array.append(forgetPW)
+       self.array.append(login)
+       self.array.append(register)
+       self.array.append(other)
 
-         self.v_array(vId: ARRAYID) { () -> Array<VueData>? in
-             
-             return self.array
-             
-         }
-                
-                  
-        }
+       self.v_array(vId: ARRAYID) { () -> Array<VueData>? in
+           
+           return self.array
+           
+       }
         
          self.v_index(vId: INDEXID) { (index) in
              
