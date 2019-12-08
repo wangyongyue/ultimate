@@ -18,8 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         Cells.registerCells()
                 
-//        UIViewController.toHome()
-        UIViewController.toLogin()
+        UIViewController.toHome()
+//        UIViewController.toLogin()
 
         
 

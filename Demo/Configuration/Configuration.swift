@@ -46,6 +46,9 @@ class Configuration{
     func navigtaionTextColor() -> UIColor{
           return UIColor.black
     }
+    func  menuColor() -> UIColor{
+          return UIColor.white
+    }
     
 }
 extension UIViewController{
