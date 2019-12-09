@@ -29,12 +29,16 @@ class MusicAttention:Vue,GetViewProtocol{
                        
               
         var array = [VueData]()
+        array.append(Music101CellModel())
+        array.append(Music301CellModel())
         array.append(MusicDynamicCellModel())
+        array.append(Music103CellModel())
         array.append(MusicDynamicCellModel())
+        array.append(Music102CellModel())
         array.append(MusicDynamicCellModel())
-         array.append(MusicDynamicCellModel())
-         array.append(MusicDynamicCellModel())
-         array.append(MusicDynamicCellModel())
+        array.append(Music103CellModel())
+        array.append(MusicDynamicCellModel())
+        array.append(Music102CellModel())
          self.v_array(vId: ARRAYID) { () -> Array<VueData>? in
              return array
                     

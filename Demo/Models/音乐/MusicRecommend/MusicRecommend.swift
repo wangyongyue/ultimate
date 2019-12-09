@@ -43,7 +43,7 @@ class MusicRecommend:Vue,V_ViewControllerProtocol{
        POST().request(params: self.http) { (isK, data) in
                        
         var array = [VueData]()
-        array.append(MusicRecommendCellModel())
+        array.append(MusicHeaderCellModel())
         array.append(MusicRecommendCellModel())
         array.append(MusicRecommendCellModel())
         array.append(MusicRecommendCellModel())

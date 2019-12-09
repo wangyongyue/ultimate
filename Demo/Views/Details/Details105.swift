@@ -132,7 +132,7 @@ class Details105Model:VueData{
     
     override func v_height() -> CGFloat {
         
-        return 100
+        return 110
     }
 }
 

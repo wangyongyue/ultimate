@@ -44,12 +44,23 @@ class MusicHome:Vue,V_ViewControllerProtocol{
                        
               
          var array = [VueData]()
-        array.append(MusicHomeCellModel())
-        array.append(MusicHomeCellModel())
-        array.append(MusicHomeCellModel())
-        array.append(MusicHomeCellModel())
-        array.append(MusicHomeCellModel())
-        array.append(MusicHomeCellModel())
+        array.append(Music101CellModel())
+        array.append(Music105CellModel())
+
+        array.append(MusicHomeCellModel("官方歌曲"))
+        array.append(Music102CellModel())
+        array.append(MusicHomeCellModel("达人歌曲"))
+        array.append(Music102CellModel())
+        array.append(MusicHomeCellModel("分类社区"))
+        array.append(Music103CellModel())
+        array.append(MusicHomeCellModel("最新专辑"))
+        array.append(Music102CellModel())
+        array.append(MusicHomeCellModel("一起听"))
+        array.append(Music104CellModel())
+        array.append(MusicHomeCellModel("VIP"))
+        array.append(Music103CellModel())
+        array.append(MusicHomeCellModel("精选视频"))
+        array.append(Music103CellModel())
 
          self.v_array(vId: ARRAYID) { () -> Array<VueData>? in
              return array

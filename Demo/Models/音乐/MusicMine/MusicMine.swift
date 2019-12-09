@@ -10,7 +10,8 @@ import UIKit
 import VueSwift
 class MusicMine:Vue,V_ViewControllerProtocol{
     private var http = DefaultHttp()
-    
+    var array = [VueData]()
+
     func v_viewController() -> UIViewController{
         let vc = TableViewController()
         vc.m = self
@@ -28,7 +29,7 @@ class MusicMine:Vue,V_ViewControllerProtocol{
         
         self.v_if(vId: STATUSID) { () -> Bool? in
             
-            return true
+            return false
         }
         
     }
@@ -49,34 +50,38 @@ class MusicMine:Vue,V_ViewControllerProtocol{
     private func dealContent(){
         
        POST().request(params: self.http) { (isK, data) in
-                       
-         let titles = ["喜欢","最近","本地","已购"]
-         var array = [VueData]()
-         for value in titles {
-                    
-             let m = TodoCellModel()
-             m.name = value
-             array.append(m)
-                    
-         }
+ 
+        
+        
+        self.array.append(MusicMineCellModel())
+         self.array.append(Music401CellModel())
+         self.array.append(Music402CellModel())
+         self.array.append(Music402CellModel())
+
+        
          self.v_array(vId: ARRAYID) { () -> Array<VueData>? in
-             return array
+             return self.array
                     
          }
-                
                   
         }
         
          self.v_index(vId: INDEXID) { (index) in
-             
-            switch index{
-            case 0:Router.push(MusicLike(),nil,nil)
-            case 1:Router.push(MusicRecent(),nil,nil)
-            case 2:Router.push(MusicLocal(),nil,nil)
-            case 3:Router.push(MusicPurchased(),nil,nil)
+            
+            if index == 1{
+                let number = self.array[1].v_identifier
+                switch number{
+                    case 0:Router.push(MusicLike(),nil,nil)
+                    case 1:Router.push(MusicRecent(),nil,nil)
+                    case 2:Router.push(MusicLocal(),nil,nil)
+                    case 3:Router.push(MusicPurchased(),nil,nil)
 
-            default:Debug.log("o")
+                    default:Debug.log("o")
+                }
+                           
             }
+             
+           
         }
         
     }

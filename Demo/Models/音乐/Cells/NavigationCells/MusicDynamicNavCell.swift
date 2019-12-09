@@ -16,28 +16,13 @@ class MusicDynamicNavCell: UITableViewCell {
         label.textAlignment = .center
         label.textColor = Configuration.instructions.navigtaionTextColor()
         label.backgroundColor = UIColor.clear
+        label.text = "动态"
         return label
     }()
     
-    lazy private var leftButton:UIButton = {
-        let a = UIButton()
-        a.setImage(UIImage.init(named: "live"), for: .normal)
-        return a
-    }()
-    lazy private var middleButton:UIButton = {
-        let a = UIButton()
-        a.setImage(UIImage.init(named: "subSearch"), for: .normal)
-        a.setTitle(" 妻子的浪漫旅行", for: .normal)
-        a.setTitleColor(UIColor.lightGray, for: .normal)
-        a.layer.cornerRadius = 3
-        a.layer.masksToBounds = true
-        a.backgroundColor = bgColor
-        a.titleLabel?.font = UIFont.boldSystemFont(ofSize: 13)
-        return a
-    }()
     lazy private var rightButton:UIButton = {
         let a = UIButton()
-        a.setImage(UIImage.init(named: "qingdan"), for: .normal)
+        a.setImage(UIImage.init(named: "m_2"), for: .normal)
 
         return a
     }()
@@ -48,15 +33,13 @@ class MusicDynamicNavCell: UITableViewCell {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         self.backgroundColor = UIColor.clear
 
-        self.contentView.addSubview(leftButton)
-        self.contentView.addSubview(middleButton)
+        self.contentView.addSubview(headerLabel)
         self.contentView.addSubview(rightButton)
 
         
-        leftButton.snp.makeConstraints { (make) in
+        headerLabel.snp.makeConstraints { (make) in
             
-            make.centerY.equalTo(self.contentView)
-            make.left.equalTo(15)
+            make.center.equalTo(self.contentView)
         }
        
         rightButton.snp.makeConstraints { (make) in
@@ -64,14 +47,7 @@ class MusicDynamicNavCell: UITableViewCell {
             make.centerY.equalTo(self.contentView)
             make.right.equalTo(-15)
         }
-        middleButton.snp.makeConstraints { (make) in
-               
-            make.centerY.equalTo(self.contentView)
-            make.left.equalTo(50)
-            make.right.equalTo(-50)
-            make.height.equalTo(30)
-
-        }
+       
            
     
     }

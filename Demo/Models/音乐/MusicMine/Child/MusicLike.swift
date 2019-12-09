@@ -43,15 +43,12 @@ class MusicLike:Vue,V_ViewControllerProtocol{
        POST().request(params: self.http) { (isK, data) in
                        
               
-         let titles = ["字体颜色note","背景图片note"]
          var array = [VueData]()
-         for value in titles {
-                    
-             let m = SetupCellModel()
-             m.name = value
-             array.append(m)
-                    
-         }
+         array.append(Details101Model())
+         array.append(Details102Model())
+         array.append(Details103Model())
+         array.append(Details104Model())
+         array.append(Details105Model())
          self.v_array(vId: ARRAYID) { () -> Array<VueData>? in
              return array
                     

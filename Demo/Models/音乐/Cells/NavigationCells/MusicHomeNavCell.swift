@@ -21,7 +21,8 @@ class MusicHomeNavCell: UITableViewCell {
     
     lazy private var leftButton:UIButton = {
         let a = UIButton()
-        a.setImage(UIImage.init(named: "live"), for: .normal)
+        a.setTitle("音乐馆", for: .normal)
+        a.setTitleColor(UIColor.black, for: .normal)
         return a
     }()
     lazy private var middleButton:UIButton = {
@@ -29,15 +30,15 @@ class MusicHomeNavCell: UITableViewCell {
         a.setImage(UIImage.init(named: "subSearch"), for: .normal)
         a.setTitle(" 妻子的浪漫旅行", for: .normal)
         a.setTitleColor(UIColor.lightGray, for: .normal)
-        a.layer.cornerRadius = 3
+        a.layer.cornerRadius = 15
         a.layer.masksToBounds = true
-        a.backgroundColor = bgColor
+        a.backgroundColor = UIColor.white
         a.titleLabel?.font = UIFont.boldSystemFont(ofSize: 13)
         return a
     }()
     lazy private var rightButton:UIButton = {
         let a = UIButton()
-        a.setImage(UIImage.init(named: "qingdan"), for: .normal)
+        a.setImage(UIImage.init(named: "m_1"), for: .normal)
 
         return a
     }()
@@ -66,7 +67,7 @@ class MusicHomeNavCell: UITableViewCell {
         middleButton.snp.makeConstraints { (make) in
                
             make.centerY.equalTo(self.contentView)
-            make.left.equalTo(50)
+            make.left.equalTo(80)
             make.right.equalTo(-50)
             make.height.equalTo(30)
 
