@@ -62,9 +62,7 @@ class LoginVCodeCell: UITableViewCell {
         codeTimer.setEventHandler {
             
             time = time - 1
-            
-            
-            
+                        
             if time < 0 {
                 codeTimer.cancel()
                 DispatchQueue.main.async {
