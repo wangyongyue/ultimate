@@ -33,6 +33,14 @@ class Cells: NSObject {
         Vue.register(aClass: LoginOtherCellModel.classForCoder(), toClass: LoginOtherCell.classForCoder())
         Vue.register(aClass: LoginVCodeCellModel.classForCoder(), toClass: LoginVCodeCell.classForCoder())
         Vue.register(aClass: LoginOutCellModel.classForCoder(), toClass: LoginOutCell.classForCoder())
+        
+        
+        Vue.register(aClass: Details101Model.classForCoder(), toClass: Details101.classForCoder())
+        Vue.register(aClass: Details102Model.classForCoder(), toClass: Details101.classForCoder())
+        Vue.register(aClass: Details103Model.classForCoder(), toClass: Details101.classForCoder())
+        Vue.register(aClass: Details104Model.classForCoder(), toClass: Details101.classForCoder())
+        Vue.register(aClass: Details105Model.classForCoder(), toClass: Details101.classForCoder())
+
 
 
     }

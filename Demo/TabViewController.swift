@@ -51,7 +51,7 @@ class TabViewController: UIViewController,UICollectionViewDelegate {
         tabLayout.minimumInteritemSpacing = 0
         let tab = CCollection.init(frame: CGRect.zero, collectionViewLayout: tabLayout)
         self.view.addSubview(tab)
-        tab.backgroundColor = Configuration.instructions.backgroundColor()
+        tab.backgroundColor = Configuration.instructions.menuColor()
         tab.snp.makeConstraints { (make) in
             
             make.top.equalTo(Adapter.top())
